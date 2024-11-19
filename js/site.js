@@ -2,9 +2,9 @@
 // Author: Your Name
 // Date:
 
-// Functions
+
 let tourData = {};
-let currentSceneId = "Stevenson"; // Start with the first scene
+let currentSceneId = "Stevenson"; //first scene right now is Stevenson (can change that later)
 
 // Function to load and display a scene
 function loadScene(sceneId) {
@@ -20,6 +20,9 @@ function loadScene(sceneId) {
 
   // Update the audio
   $("#scene-audio").attr("src", scene.audio);
+
+  //load the CSS for this specific scene
+  $("#theme-style").attr("href", `styles/${scene.style}`);
 
   // Clear and add options
   $("#options-container").empty();
