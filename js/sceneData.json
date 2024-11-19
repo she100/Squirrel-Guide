@@ -2,6 +2,7 @@
   "scenes": [
     {
       "id": "Stevenson",
+      "style": "Stevenson.css",
       "description": "what the squirrel says about Stevenson",
       "image": "img/Stevenson.jpg",
       "audio": "audio/Stevenson.mp3",
@@ -20,6 +21,7 @@
     },
     {
       "id": "Cowell",
+      "style": "Cowell.css",
       "description": "what the squirrel says about Cowell",
       "image": "img/Cowell.jpg",
       "audio": "audio/Cowell.mp3",
@@ -38,6 +40,7 @@
     },
     {
       "id": "Merrill",
+      "style": "Merrill.css",
       "description": "what the squirrel says about Merrill",
       "image": "img/Merrill.jpg",
       "audio": "audio/Merrill.mp3",
