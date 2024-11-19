@@ -1,0 +1,58 @@
+{
+  "scenes": [
+    {
+      "id": "Stevenson",
+      "description": "what the squirrel says about Stevenson",
+      "image": "img/Stevenson.jpg",
+      "audio": "audio/Stevenson.mp3",
+      "options": [
+        {
+          "text": "Go to Cowell",
+          "nextScene": "Cowell"
+        },
+        {
+          "text": "Go to Merrill",
+          "nextScene": "Merrill"
+        }
+      ],
+      "items": [
+      ]
+    },
+    {
+      "id": "Cowell",
+      "description": "what the squirrel says about Cowell",
+      "image": "img/Cowell.jpg",
+      "audio": "audio/Cowell.mp3",
+      "options": [
+        {
+          "text": "Go to Stevenson",
+          "nextScene": "Stevenson"
+        },
+        {
+          "text": "Go to Merrill",
+          "nextScene": "Merrill"
+        }
+      ],
+      "items": [
+      ]
+    },
+    {
+      "id": "Merrill",
+      "description": "what the squirrel says about Merrill",
+      "image": "img/Merrill.jpg",
+      "audio": "audio/Merrill.mp3",
+      "options": [
+        {
+          "text": "Go to Stevenson",
+          "nextScene": "Stevenson"
+        },
+        {
+          "text": "Go to Cowell",
+          "nextScene": "Cowell"
+        }
+      ],
+      "items": [
+      ]
+    }
+  ]
+}
