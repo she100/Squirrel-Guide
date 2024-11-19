@@ -1,0 +1,17 @@
+/* Here we can set styles for this lab page that we don't want to effect others pages */
+
+/* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
+#testing1 input[type="text"] {
+  width: 10px;
+  height: 15px;
+}
+#testing1{
+  border-radius: 10px;
+  border: 1px solid black;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 20px;
+  background-image: url('../img/paper.jpg');
+  background-size: contain;
+  display: inline-block;
+}
