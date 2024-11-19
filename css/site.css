@@ -4,7 +4,7 @@
 
 /* we can select an html element tag, in this case "body" will apply to the whole document */
 body {
-  background-color: #50808E;
+  background-color: #ffffff;
 }
 
 /* we can have rules apply to multiple elements at the same time with commas */
@@ -19,18 +19,20 @@ h1 {
   font-size: 200%;
 }
 
+/* Command/Control + / to make a large piece of text into comments */
+
 /* the hashtag in a CSS selector selects an element by id, e.g., id="content" */
-#content {
+/* #content {
   margin: 10px;
   padding: 10px;
   border: solid 1px #888;
-  background-color: #84B59F;
-}
+  background-color: #5e7366;
+} */
 
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
-.minor-section {
+/* .minor-section {
   padding: 10px;
   margin-bottom: 10px;
   border: solid 1px #888;
   background-color: #A3C9A8;
-}
+} */
