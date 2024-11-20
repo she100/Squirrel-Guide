@@ -2,10 +2,10 @@
   "scenes": [
     {
       "id": "Stevenson",
-      "style": "Stevenson.css",
-      "description": "what the squirrel says about Stevenson",
-      "image": "img/Stevenson.jpg",
-      "audio": "audio/Stevenson.mp3",
+      "style": "stevenson.css",
+      "description": "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with:",
+      "image": "page1/img/TempStevenson.jpg",
+      "audio": "audio/stevenson.mp3",
       "options": [
         {
           "text": "Go to Cowell",
@@ -16,12 +16,11 @@
           "nextScene": "Merrill"
         }
       ],
-      "items": [
-      ]
+      "items": []
     },
     {
       "id": "Cowell",
-      "style": "Cowell.css",
+      "style": "cowell.css",
       "description": "what the squirrel says about Cowell",
       "image": "img/Cowell.jpg",
       "audio": "audio/Cowell.mp3",
@@ -35,12 +34,11 @@
           "nextScene": "Merrill"
         }
       ],
-      "items": [
-      ]
+      "items": []
     },
     {
       "id": "Merrill",
-      "style": "Merrill.css",
+      "style": "merrill.css",
       "description": "what the squirrel says about Merrill",
       "image": "img/Merrill.jpg",
       "audio": "audio/Merrill.mp3",
@@ -54,8 +52,7 @@
           "nextScene": "Cowell"
         }
       ],
-      "items": [
-      ]
+      "items": []
     }
   ]
 }

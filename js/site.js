@@ -12,17 +12,20 @@ function loadScene(sceneId) {
   const scene = tourData.scenes.find(s => s.id === sceneId);
   if (!scene) return; // Exit if the scene is not found
 
+  // Update the scene title
+  $("#scene-title").text(scene.id);
+
   // Update the description
   $("#scene-description").text(scene.description);
 
-  // Update the image
-  $("#scene-image").attr("src", scene.image);
+  // Set the background image
+  $("body").css("background-image", `url(${scene.image})`);
 
   // Update the audio
   $("#scene-audio").attr("src", scene.audio);
 
   //load the CSS for this specific scene
-  $("#theme-style").attr("href", `styles/${scene.style}`);
+  $("#theme-style").attr("href", `../css/${scene.style}`);
 
   // Clear and add options
   $("#options-container").empty();
@@ -41,4 +44,12 @@ $(document).ready(function() {
     tourData = data;
     loadScene(currentSceneId); // Load the initial scene
   });
+});
+
+
+// Event listener for the audio
+$("#scene-audio").on("play", function() {
+  //show the thought bubble when audio is played
+  
+  $("#thought").show();
 });

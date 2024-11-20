@@ -1,38 +1,122 @@
-/* we can use a single css file to style all the files in our wwebsite */
-
-/* you can pick your own background colors, text colors, and fonts */
-
-/* we can select an html element tag, in this case "body" will apply to the whole document */
-body {
-  background-color: #ffffff;
-}
-
-/* we can have rules apply to multiple elements at the same time with commas */
-h1,h2,h3 {
-  font-family: sans-serif;
-}
-
-/* and we can have rules that overlap other rules, both take effect */
-h1 {
-  letter-spacing: 5px;
-  word-spacing: 5px;
-  font-size: 200%;
-}
-
-/* Command/Control + / to make a large piece of text into comments */
-
-/* the hashtag in a CSS selector selects an element by id, e.g., id="content" */
-/* #content {
-  margin: 10px;
-  padding: 10px;
-  border: solid 1px #888;
-  background-color: #5e7366;
-} */
+/* Here we can set styles for this lab page that we don't want to effect others pages */
 
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
-/* .minor-section {
-  padding: 10px;
-  margin-bottom: 10px;
-  border: solid 1px #888;
-  background-color: #A3C9A8;
-} */
+html,
+body {
+  height: 100vh; /* Make sure both html and body elements cover the full viewport height */
+  margin: 0; /* Remove default margins */
+  overflow: hidden;
+}
+
+body {
+  background-size: cover; /* Ensure the entire image is visible */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+}
+
+#game-container {
+  height: 100%;
+}
+
+#scene-title {
+  font-family: "Neucha", sans-serif;
+  font-size: 108px;
+  font-weight: 500;
+  margin: 0;
+  text-transform: uppercase;
+  line-height: 1;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(121, 9, 115, 1) 46%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+#squirrel-container {
+  position: absolute;
+  width: 25%;
+  top: 40%;
+  left: 60%;
+}
+
+#squirrel {
+  width: 100%;
+  position: relative;
+}
+
+#scene-audio {
+  display: block;
+  margin: 0 auto;
+}
+
+#thought {
+  position: absolute;
+  right: 40%;
+  top: 45%;
+  width: 43%;
+  height: 36.7%;
+  padding: 20px;
+  background: #cf5858;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  display: none;
+}
+
+#thought:after {
+  content: "";
+  position: absolute;
+  border-style: solid;
+  border-width: 20px 0 20px 82px;
+  border-color: transparent #cf5858;
+  display: block;
+  width: 0;
+  z-index: 1;
+  right: -82px;
+  top: 102px;
+}
+
+#options-container {
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+/* button Style from https://getcssscan.com/css-buttons-examples */
+#options-container button {
+  margin-right: 10px;
+  background-color: #fff;
+  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: rgba(0, 0, 0, 0.2) 15px 28px 25px -18px;
+  box-sizing: border-box;
+  color: #41403e;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Neucha, sans-serif;
+  font-size: 1rem;
+  line-height: 23px;
+  outline: none;
+  padding: 0.75rem;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+#options-container button:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+}
+
+#options-container button:focus {
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 4px -6px;
+}

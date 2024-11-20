@@ -3,17 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Choose Your Adventure</title>
-    <link id="theme-style" rel="stylesheet" href="styles/default.css" />
+    <title>Squirrel Guide</title>
+    <link rel="stylesheet" href="css/site.css" />
+    <link id="theme-style" rel="stylesheet" href="" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./js/site.js" defer></script>
   </head>
   <body>
     <div id="game-container">
-      <h1 id="scene-description"></h1>
-      <img id="scene-image" src="" alt="Scene Image" />
-      <audio id="scene-audio" controls></audio>
-      <div id="options-container"></div>
+      <h1 id="scene-title"></h1>
+      <div id="thought">
+        <p id="scene-description"></p>
+        <div id="options-container"></div>
+      </div>
+      <div id="squirrel-container">
+        <img
+          id="squirrel"
+          src="./page1/img/TempSquirrel.png"
+          alt="Squirrel Image"
+        />
+        <audio id="scene-audio" controls></audio>
+      </div>
     </div>
   </body>
 </html>
