@@ -40,7 +40,7 @@ function loadScene(sceneId) {
 
 // Load the JSON data and initialize the first scene
 $(document).ready(function() {
-  $.getJSON('../js/sceneData.json', function(data) {
+  $.getJSON('./js/sceneData.json', function(data) {
     tourData = data;
     loadScene(currentSceneId); // Load the initial scene
   });
