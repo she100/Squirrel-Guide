@@ -21,23 +21,31 @@
 <body>
 	<!-- Style this page by changing the CSS in ../css/site.css or css/lab.css -->
 	<main id="content">
+		<img src="./img/squ.png" id="overlay-image" onclick="animationSpeechBubble()">
 		<div id="testing1">
 			<h1>
 				Here's what a header looks like 
 			</h1>
 			<p>
-				Here's what a paragraph looks like 
+				Here's what a paragraph looks like. Feel free to change the background image for testing. <br>
+				Also click on the squirrel to test dialog boxes
 			</p>
 			<input type="text" name="animatie button" id="animate">
 			<button>Animate</button>
 
+		</div> <br>
+		<div id="controls">
+		<input type="range" min="0" max="255" value="0" id="redSlider"> Red <p id="red"></p> <br>
+		<input type="range" min="0" max="255" value="0" id="greenSlider"> Green <p id="green"></p><br>
+		<input type="range" min="0" max="255" value="0" id="blueSlider"> Blue <p id="blue"></p><br> 
+		<button id="border" onclick="modifyColor(0)">Border Color</button> <button id="background" onclick="modifyColor(1)">Background</button>
+		<button id="header" onclick="modifyColor(2)">Header</button> <button id="paragraph" onclick="modifyColor(3)">Paragraph</button>
 		</div>
-		<div>
-			
-		</div>
-		<div>
-			
-		</div>
+		<div id="speech-bubble">
+		<h1>Character Name</h1>
+		<p id="speech">Speech would go here and we can jquery to add the text we want</p>
+		<button onclick="closeText()">Close</button>
+		<button onclick="moreText()">Next</button>
 	</main>
 </body>
 </html>
