@@ -4,7 +4,7 @@
 
 
 let tourData = {};
-let currentSceneId = "Cowell"; //first scene right now is Stevenson (can change that later)
+let currentSceneId = "Stevenson"; //first scene right now is Stevenson (can change that later)
 
 // Function to load and display a scene
 function loadScene(sceneId) {
