@@ -25,7 +25,7 @@ function loadScene(sceneId) {
   $("#scene-audio").attr("src", scene.audio);
 
   //load the CSS for this specific scene
-  $("#theme-style").attr("href", `../css/${scene.style}`);
+  $("#theme-style").attr("href", `./css/${scene.style}`);
 
   // Clear and add options
   $("#options-container").empty();
