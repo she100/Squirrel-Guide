@@ -4,7 +4,7 @@
 
 
 let tourData = {};
-let currentSceneId = "Stevenson"; //first scene right now is Stevenson (can change that later)
+let currentSceneId = "Cowell"; //first scene right now is Stevenson (can change that later)
 
 // Function to load and display a scene
 function loadScene(sceneId) {
@@ -32,10 +32,15 @@ function loadScene(sceneId) {
   scene.options.forEach(option => {
     const button = $("<button></button>").text(option.text);
     button.on("click", function() {
+      resetScene(); // Reset the scene
       loadScene(option.nextScene); // Load the next scene on click
     });
     $("#options-container").append(button);
   });
+}
+
+function resetScene(){
+  $("#thought,#tail-box").css("opacity", "0");
 }
 
 // Load the JSON data and initialize the first scene
@@ -46,10 +51,10 @@ $(document).ready(function() {
   });
 });
 
-
 // Event listener for the audio
-$("#scene-audio").on("play", function() {
-  //show the thought bubble when audio is played
-  
-  $("#thought").show();
+$("#play-button").on("click", function() {
+  //play the audio for that scene
+  $("#scene-audio").trigger("play");
+  //change opacity to 1 to show thought bubble
+  $("#thought,#tail-box").css("opacity", "1");
 });

@@ -8,21 +8,49 @@
     <link id="theme-style" rel="stylesheet" href="" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./js/site.js" defer></script>
+
+    <!-- for the button icons -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css"
+    />
   </head>
   <body>
-    <div id="game-container">
-      <h1 id="scene-title"></h1>
-      <div id="thought">
-        <p id="scene-description"></p>
-        <div id="options-container"></div>
+    <audio id="scene-audio"></audio>
+    <div id="main-container">
+      <div id="header">
+        <h1 id="scene-title"></h1>
       </div>
-      <div id="squirrel-container">
-        <img
-          id="squirrel"
-          src="./page1/img/TempSquirrel.png"
-          alt="Squirrel Image"
-        />
-        <audio id="scene-audio" controls></audio>
+      <div id="controls-container">
+        <div class="play-container animated" id="play">
+          <button id="play-button"><i class="fas fa-play"></i></button>
+        </div>
+        <div class="play-container" id="home">
+          <a id="home-button" href="./index.html"
+            ><i class="fas fa-home"></i
+          ></a>
+        </div>
+      </div>
+      <div id="content-container">
+        <div id="squirrel-container">
+          <div id="thought">
+            <p id="scene-description"></p>
+            <div id="options-container"></div>
+          </div>
+          <div id="tail-box"></div>
+          <img
+            id="squirrel"
+            src="./page1/img/TempSquirrel.png"
+            alt="Squirrel Image"
+          />
+        </div>
+      </div>
+      <div id="footer">
+        <!-- <button id="restart-button">Restart</button> -->
       </div>
     </div>
   </body>
