@@ -1,6 +1,88 @@
 /* this css file will only style the homepage of our site */
 
-.cat-photo {
-  margin: 10px;
-  max-width: 500px;
+#leaves {
+  position: absolute;
+  max-width: 30%;
+  height: auto;
+  
+  
+}
+.left-side{
+  top: 0px;
+  left: -125px;
+}
+.right-side {
+  top: 0px;
+  right: -125px;
+  transform: scaleX(-1);
+}
+body{
+  background-color: skyblue;
+}
+
+#title-card {
+  position: absolute;
+  left:680px;
+  border-radius: 20px;
+  padding:30px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  font-size: 40px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: rgb(2, 126, 33)
+}
+#clouds1{
+  position: absolute;
+  opacity: 80%;
+  max-width: 30%;
+  height: auto;
+  top: 0px;
+  left:400px;
+}
+#clouds2{
+  position: absolute;
+  opacity: 80%;
+  max-width: 30%;
+  height: auto;
+  top: -50px;
+  left: 1200px
+}
+#tree{
+  position: absolute;
+  left:800px;
+  top:-50px;
+  max-height: 80%;
+  width: auto;
+}
+#squirrel{
+  position: absolute;
+  max-width: 15%;
+  height: auto;
+  top:412px;
+  left:700px;
+}
+#begin{
+  position:absolute;
+  left:775px;
+  top: 665px;
+  width:325px;
+  height: 125px;
+  border-radius: 5px;
+  border-color: green;
+  background-color: rgb(112, 52, 24);
+  font-size: 50px;
+  color: #FFFDD0;
+}
+#credits{
+  position: absolute;
+  top: 850px;
+}
+#shtuff{
+  position: absolute;
+  top: 850px;
+  right:10px;
+}
+
+html {
+  overflow-x: hidden;
 }
