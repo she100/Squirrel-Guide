@@ -19,13 +19,13 @@ function loadScene(sceneId) {
   $("#scene-description").text(scene.description);
 
   // Set the background image
-  $("body").css("background-image", `url(${scene.image})`);
+  $("body").css("background-image", `url(./Scenes/${scene.id}/${scene.image})`);
 
   // Update the audio
-  $("#scene-audio").attr("src", scene.audio);
+  $("#scene-audio").attr("src", `./Scenes/${scene.id}/${scene.audio}`);
 
   //load the CSS for this specific scene
-  $("#theme-style").attr("href", `./css/${scene.style}`);
+  $("#theme-style").attr("href", `./Scenes/${scene.id}/css/${scene.style}`);
 
   // Clear and add options
   $("#options-container").empty();
@@ -40,7 +40,10 @@ function loadScene(sceneId) {
 }
 
 function resetScene(){
+  //hide the thought bubble
   $("#thought,#tail-box").css("opacity", "0");
+  //restart animation
+  $("#play").attr("class", "play-container animated");
 }
 
 // Load the JSON data and initialize the first scene
@@ -57,4 +60,6 @@ $("#play-button").on("click", function() {
   $("#scene-audio").trigger("play");
   //change opacity to 1 to show thought bubble
   $("#thought,#tail-box").css("opacity", "1");
+  //stop play button animation
+  $("#play").attr("class", "play-container");
 });
