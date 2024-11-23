@@ -3,8 +3,13 @@
     {
       "id": "Stevenson",
       "style": "stevenson.css",
+<<<<<<< HEAD
       "description": "Welcome! Our tour begins here at Stevenson College, known for its theme, Self and Society, which encourages students to explore their identities and roles in the broader world. Its core course focuses on critical thinking, ethical reflection, and the interplay between the individual and society. Stevenson offers a welcoming community with beautiful views of the Monterey Bay, emphasizing leadership, academic success, and personal growth. The college is also recognized for its vibrant student activities and strong traditions.",
       "image": "page1/img/TempStevenson.jpg",
+=======
+      "description": "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with:",
+      "image": "img/TempStevenson.jpg",
+>>>>>>> b427451c9d9ecb2335014b7a6a106d1df36fabf0
       "audio": "audio/stevenson.mp3",
       "options": [
         {
@@ -48,8 +53,170 @@
           "nextScene": "Stevenson"
         },
         {
-          "text": "Go to Cowell",
-          "nextScene": "Cowell"
+          "text": "Go to Crown",
+          "nextScene": "Crown"
+        }
+      ],
+      "items": []
+    },
+    {
+      "id": "Crown",
+      "style": "crown.css",
+      "description": "what the squirrel says about Crown",
+      "image": "img/crown.jpg",
+      "audio": "audio/crown.mp3",
+      "options": [
+        {
+          "text": "Go to Merrill",
+          "nextScene": "Merrill"
+        },
+        {
+          "text": "Go to College 9",
+          "nextScene": "College 9"
+        }
+      ],
+      "items": []
+    },
+    {
+      "id": "College 9",
+      "style": "college9.css",
+      "description": "what the squirrel says about College 9",
+      "image": "img/college9.jpg",
+      "audio": "audio/college9.mp3",
+      "options": [
+        {
+          "text": "Go to Crown",
+          "nextScene": "Crown"
+        },
+        {
+          "text": "Go to John Lewis",
+          "nextScene": "John R. Lewis"
+        }
+      ],
+      "items": []
+    },
+    {
+      "id": "John R. Lewis",
+      "style": "lewis.css",
+      "description": "what the squirrel says about John R. Lewis",
+      "image": "img/lewis.jpg",
+      "audio": "audio/lewis.mp3",
+      "options": [
+        {
+          "text": "Go to College 9",
+          "nextScene": "College 9"
+        },
+        {
+          "text": "Go to Science Hill",
+          "nextScene": "Science Hill"
+        }
+      ],
+      "items": []
+    },
+    {
+      "id": "Science Hill",
+      "style": "science.css",
+      "description": "what the squirrel says about Science Hill",
+      "image": "img/science.jpg",
+      "audio": "audio/science.mp3",
+      "options": [
+        {
+          "text": "Go to John R. Lewis",
+          "nextScene": "John R. Lewis"
+        },
+        {
+          "text": "Go to Kresge",
+          "nextScene": "Kresge"
+        }
+      ],
+      "items": []
+    },
+    {
+      "id": "Kresge",
+      "style": "kresge.css",
+      "description": "what the squirrel says about Kresge",
+      "image": "img/kresge.jpg",
+      "audio": "audio/kresge.mp3",
+      "options": [
+        {
+          "text": "Go to Science Hill",
+          "nextScene": "Science Hill"
+        },
+        {
+          "text": "Go to Porter",
+          "nextScene": "Porter"
+        }
+      ],
+      "items": []
+    },
+    {
+      "id": "Porter",
+      "style": "porter.css",
+      "description": "what the squirrel says about Porter",
+      "image": "img/porter.jpg",
+      "audio": "audio/porter.mp3",
+      "options": [
+        {
+          "text": "Go to Kresge",
+          "nextScene": "Kresge"
+        },
+        {
+          "text": "Go to Rachel Carson",
+          "nextScene": "Rachel Carson"
+        }
+      ],
+      "items": []
+    },
+    {
+      "id": "Rachel Carson",
+      "style": "carson.css",
+      "description": "what the squirrel says about Rachel Carson",
+      "image": "img/carson.jpg",
+      "audio": "audio/carson.mp3",
+      "options": [
+        {
+          "text": "Go to Porter",
+          "nextScene": "Porter"
+        },
+        {
+          "text": "Go to Oakes",
+          "nextScene": "Oakes"
+        }
+      ],
+      "items": []
+    },
+    {
+      "id": "Oakes",
+      "style": "oakes.css",
+      "description": "what the squirrel says about Oakes",
+      "image": "img/oakes.jpg",
+      "audio": "audio/oakes.mp3",
+      "options": [
+        {
+          "text": "Go to Rachel Carson",
+          "nextScene": "Rachel Carson"
+        },
+        {
+          "text": "Rave Time!",
+          "nextScene": "Rave"
+        }
+      ],
+      "items": []
+    },
+    {
+      "id": "Rave",
+      "style": "rave.css",
+      "description": "boots and cats",
+      "image": "img/oakes.jpg",
+      "audio": "audio/oakes.mp3",
+      "options": [
+        {
+          "text": "Go to Rachel Carson",
+          "nextScene": "Rachel Carson"
+        },
+        {
+          "text": "Rave Time!",
+          "nextScene": "Rave"
         }
       ],
       "items": []

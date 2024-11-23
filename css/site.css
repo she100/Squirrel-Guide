@@ -9,6 +9,7 @@ body {
   background-size: cover; /* Ensure the entire image is visible */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
+  background-color: blue;
 }
 
 #main-container {
