@@ -3,13 +3,8 @@
     {
       "id": "Stevenson",
       "style": "stevenson.css",
-<<<<<<< HEAD
       "description": "Welcome! Our tour begins here at Stevenson College, known for its theme, Self and Society, which encourages students to explore their identities and roles in the broader world. Its core course focuses on critical thinking, ethical reflection, and the interplay between the individual and society. Stevenson offers a welcoming community with beautiful views of the Monterey Bay, emphasizing leadership, academic success, and personal growth. The college is also recognized for its vibrant student activities and strong traditions.",
-      "image": "page1/img/TempStevenson.jpg",
-=======
-      "description": "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with:",
-      "image": "img/TempStevenson.jpg",
->>>>>>> b427451c9d9ecb2335014b7a6a106d1df36fabf0
+      "image": "TempStevenson.jpg",
       "audio": "audio/stevenson.mp3",
       "options": [
         {
@@ -27,7 +22,7 @@
       "id": "Cowell",
       "style": "cowell.css",
       "description": "Cowell College, the founding college of UC Santa Cruz, emphasizes the theme, The Pursuit of Truth in the Company of Friends. Known for its strong sense of community and intellectual engagement, it offers a stunning hilltop location with views of the Monterey Bay. Cowell provides a liberal arts-inspired approach to education, and its core course explores the nature of justice, critical thinking, and social responsibility. Its residence halls and apartments foster a close-knit, supportive environment for students. It is also home to a pretty fountain that usually isn't working!",
-      "image": "img/Cowell.jpg",
+      "image": "Cowell.jpg",
       "audio": "audio/Cowell.mp3",
       "options": [
         {
@@ -45,7 +40,7 @@
       "id": "Merrill",
       "style": "merrill.css",
       "description": "what the squirrel says about Merrill",
-      "image": "img/Merrill.jpg",
+      "image": "Merrill.jpg",
       "audio": "audio/Merrill.mp3",
       "options": [
         {
@@ -63,7 +58,7 @@
       "id": "Crown",
       "style": "crown.css",
       "description": "what the squirrel says about Crown",
-      "image": "img/crown.jpg",
+      "image": "crown.jpg",
       "audio": "audio/crown.mp3",
       "options": [
         {
@@ -81,7 +76,7 @@
       "id": "College 9",
       "style": "college9.css",
       "description": "what the squirrel says about College 9",
-      "image": "img/college9.jpg",
+      "image": "college9.jpg",
       "audio": "audio/college9.mp3",
       "options": [
         {
@@ -99,7 +94,7 @@
       "id": "John R. Lewis",
       "style": "lewis.css",
       "description": "what the squirrel says about John R. Lewis",
-      "image": "img/lewis.jpg",
+      "image": "lewis.jpg",
       "audio": "audio/lewis.mp3",
       "options": [
         {
@@ -117,7 +112,7 @@
       "id": "Science Hill",
       "style": "science.css",
       "description": "what the squirrel says about Science Hill",
-      "image": "img/science.jpg",
+      "image": "science.jpg",
       "audio": "audio/science.mp3",
       "options": [
         {
@@ -135,7 +130,7 @@
       "id": "Kresge",
       "style": "kresge.css",
       "description": "what the squirrel says about Kresge",
-      "image": "img/kresge.jpg",
+      "image": "kresge.jpg",
       "audio": "audio/kresge.mp3",
       "options": [
         {
@@ -153,7 +148,7 @@
       "id": "Porter",
       "style": "porter.css",
       "description": "what the squirrel says about Porter",
-      "image": "img/porter.jpg",
+      "image": "porter.jpg",
       "audio": "audio/porter.mp3",
       "options": [
         {
@@ -171,7 +166,7 @@
       "id": "Rachel Carson",
       "style": "carson.css",
       "description": "what the squirrel says about Rachel Carson",
-      "image": "img/carson.jpg",
+      "image": "carson.jpg",
       "audio": "audio/carson.mp3",
       "options": [
         {
@@ -189,7 +184,7 @@
       "id": "Oakes",
       "style": "oakes.css",
       "description": "what the squirrel says about Oakes",
-      "image": "img/oakes.jpg",
+      "image": "oakes.jpg",
       "audio": "audio/oakes.mp3",
       "options": [
         {
@@ -207,7 +202,7 @@
       "id": "Rave",
       "style": "rave.css",
       "description": "boots and cats",
-      "image": "img/oakes.jpg",
+      "image": "oakes.jpg",
       "audio": "audio/oakes.mp3",
       "options": [
         {

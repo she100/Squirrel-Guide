@@ -19,7 +19,7 @@ function loadScene(sceneId) {
   $("#scene-description").text(scene.description);
 
   // Set the background image
-  $("body").css("background-image", `url(./Scenes/${scene.id}/${scene.image})`);
+  $("body").css("background-image", `url(./Scenes/${scene.id}/img/${scene.image})`);
 
   // Update the audio
   $("#scene-audio").attr("src", `./Scenes/${scene.id}/${scene.audio}`);
