@@ -86,3 +86,13 @@ body{
 html {
   overflow-x: hidden;
 }
+
+#credits{
+  position: absolute;
+  width: 140px;
+  height: 100px;
+  background-color: blanchedalmond;
+  border-color: blanchedalmond;
+  font-size: 30px;
+  text-align: center;
+}
