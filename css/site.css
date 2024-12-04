@@ -65,6 +65,28 @@ body {
   /* border: solid 4px purple; */
 }
 
+#scene-title {
+  font-family: "Neucha", sans-serif;
+  font-size: 108px;
+  font-weight: 500;
+  margin: 0;
+  text-transform: uppercase;
+  line-height: 1;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(121, 9, 115, 1) 46%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+#squirrel {
+  width: 25%;
+  /* border: solid 4px red; */
+}
+
 #thought,
 #tail-box {
   position: relative;
@@ -157,6 +179,7 @@ body {
   border-radius: 50%;
   padding: 15px;
   position: relative;
+  cursor: pointer;
 }
 
 .animated a::after,

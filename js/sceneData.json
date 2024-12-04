@@ -1,9 +1,479 @@
 {
   "scenes": [
     {
+      "id": "Welcome",
+      "title": "Welcome",
+      "description": "\"Welcome to UCSC. Home of the Banana Slug. Apply here and you too can be a slug. But if you're not too sure yet come on by and schedule a tour with us we'll show you what it means to be a slug.\"",
+      "narrative": "",
+      "image": "./Scenes/Welcome/img/Welcome.jpg",
+      "audio": "audio/stevenson.mp3",
+      "options": [
+        {
+          "text": "Apply Now",
+          "nextScene": "Apply"
+        },
+        {
+          "text": "Schedule a Tour",
+          "nextScene": "Tour Start"
+        }
+      ]
+    },
+    {
+      "id": "Apply",
+      "title": "Congratulations!!",
+      "description": "\"You are now a slug, gimme all your money!\"",
+      "narrative": "",
+      "image": "./Scenes/Congrats/img/congrats.jpeg",
+      "audio": "audio/stevenson.mp3",
+      "options": [
+        {
+          "text": "Or just follow the damn squirrel!",
+          "nextScene": "Tour Start"
+        }
+      ]
+    },
+    {
+      "id": "Tour Start",
+      "title": "Tour Start",
+      "description": [
+        "\"Ask anyone who's come to UCSC and they're gonna say they came here for the beautiful redwoods, take as many pictures as you want we'll take our time, we like to chill here at UCSC\"",
+        "\"Oh no! you've missed your tour, but you can still hear them in the redwoods. I'm sure you'll be able to catch them if you hurry.\"",
+        "You take a few steps toward the speaker but you feel a sharp pain in your ankle."
+      ],
+      "narrative": "",
+      "image": "./Scenes/Welcome/img/Welcome.jpg",
+      "audio": "audio/stevenson.mp3",
+      "options": [
+        {
+          "text": "Scream in pain!",
+          "nextScene": "Scream in pain"
+        },
+        {
+          "text": "Kick at the weight on your foot.",
+          "nextScene": "Kick"
+        }
+      ]
+    },
+    {
+      "id": "Kick",
+      "description": [
+        "Your foot hits a dead weight. you look down to see a squirrel lying limp. A puddle of blood flows from the squirrels face.",
+        "Oh no, you killed a squirrel. Didn't you read somewhere that all wildlife is protected on this campus. Are you going to jail?",
+        "But then the squirrel stirs a little, he's alive! You didn't kill a protected animal. Whew!",
+        "\"oo hoo hoo you're gonna be hearing from my lawyer you little shit.\""
+      ],
+      "narrative": "",
+      "image": "./Scenes/Welcome/img/Welcome.jpg",
+      "audio": "audio/stevenson.mp3",
+      "options": [
+        {
+          "text": "Scream in pain!",
+          "nextScene": "Scream in pain"
+        }
+      ]
+    },
+    {
+      "id": "Scream in pain",
+      "title": "AHHHHH!!",
+      "description": "\"Ah come on you big baby it was just a little nibble\"",
+      "narrative": "",
+      "image": "./Scenes/Welcome/img/Welcome.jpg",
+      "audio": "audio/stevenson.mp3",
+      "options": [
+        {
+          "text": "Look Down!",
+          "nextScene": "Look Down"
+        }
+      ]
+    },
+    {
+      "id": "Look Down",
+      "description": [
+        "You see a squirrel swishing around a liquid in his cheeks.",
+        "He spits out a lougie of your blood and a chunk of flesh",
+        "He scrunches up his face and says, \"B-positive!\"."
+      ],
+      "narrative": "",
+      "image": "./Scenes/Welcome/img/Welcome.jpg",
+      "audio": "audio/stevenson.mp3",
+      "options": [
+        {
+          "text": "Dial 911",
+          "nextScene": "Dial 911"
+        }
+      ]
+    },
+    {
+      "id": "Dial 911",
+      "description": [
+        "You dial 911 because what the fuck else are you going to do a squirrel is talking and just bit your ankle",
+        "As the dial tone begins the squirrel leaps up in a fury and scratches at your hand. You drop your phone and the squirrel jumps on top of it silencing the call.",
+        "He looks up at you, offended he says, \"Hey seriously you gonna get the cops involved? You're lucky I stopped you when I did, because the cops don't need to know nothing about my operation here.\""
+      ],
+      "narrative": "",
+      "image": "./Scenes/Welcome/img/Welcome.jpg",
+      "audio": "audio/stevenson.mp3",
+      "options": [
+        {
+          "text": "Your operation?",
+          "nextScene": "Operation"
+        }
+      ]
+    },
+    {
+      "id": "Operation",
+      "description": [
+        "\"yeah my operation, listen I'm sorry I took a bite. I got something to offer you here, and now that I took a bite, we can speak face to face. We're blood now if you know what I'm saying.\"",
+        "...",
+        "\"look I can see your confused, lets start from the beginning ok. My name's Buster what's yours?\""
+      ],
+      "narrative": "",
+      "image": "./Scenes/Welcome/img/Welcome.jpg",
+      "audio": "audio/stevenson.mp3",
+      "options": [
+        {
+          "text": "Tell him your name",
+          "nextScene": "Name"
+        }
+      ]
+    },
+    {
+      "id": "Name",
+      "title": "Tour Start",
+      "description": [
+        "\"Eh that's a good name you got there kid, listen I see that you've missed your tour.\"",
+        "in the distance you hear the muffled loudspeaker getting further away.",
+        "\"I happen to provide a service for people in your unique situation. I'm a tour guide here at UCSC.\"",
+        "He points to his chest where a metal pin is attached, you can see the words tour guide scratched into it . "
+      ],
+      "narrative": "",
+      "image": "./Scenes/Welcome/img/Welcome.jpg",
+      "audio": "audio/stevenson.mp3",
+      "options": [
+        {
+          "text": "So you're with the school?",
+          "nextScene": "With the school?"
+        }
+      ]
+    },
+    {
+      "id": "With the school?",
+      "title": "Tour Start",
+      "description": "\"I'm not really with the school perse, but not everyone gets a spot with the quote unquote 'official tour guides'. And thats where I step in, for a much discounted price I can give you a tour much better than the ones those smucks walking through the forest could ever give you.\"",
+      "narrative": "",
+      "image": "./Scenes/Welcome/img/Welcome.jpg",
+      "audio": "audio/stevenson.mp3",
+      "options": [
+        {
+          "text": "Thanks but I'm good.",
+          "nextScene": "I'm good"
+        },
+        {
+          "text": "Ok? How much is the tour?",
+          "nextScene": "Tour Price"
+        }
+      ]
+    },
+    {
+      "id": "I'm good",
+      "title": "Tour Start",
+      "description": [
+        "The squirrel inches toward you and clicks his teeth.",
+        "\"Eh, you don't have much of a choice if I'm gonna be real with you. You see I kinda got a case of the rabies.\""
+      ],
+      "narrative": "",
+      "image": "./Scenes/Welcome/img/Welcome.jpg",
+      "audio": "audio/stevenson.mp3",
+      "options": [
+        {
+          "text": "Ummmm?",
+          "nextScene": "!"
+        }
+      ]
+    },
+    {
+      "id": "!",
+      "title": "Tour Start",
+      "description": "\"hey hey don't freak out just yet, I got a cure back at my place but if I'm gonna bring you there you might as well go on my tour first well we get there.\"",
+      "image": "./Scenes/Welcome/img/Welcome.jpg",
+      "audio": "audio/stevenson.mp3",
+      "options": [
+        {
+          "text": "Ok? How much is the tour?",
+          "nextScene": "Tour Price"
+        }
+      ]
+    },
+    {
+      "id": "Tour Price",
+      "description": "\"Sixteen hundred dollars.\"",
+      "image": "./Scenes/Welcome/img/Welcome.jpg",
+      "audio": "audio/stevenson.mp3",
+      "options": [
+        {
+          "text": "What! That's the discounted price",
+          "nextScene": "Discounted Price"
+        },
+        {
+          "text": "Ok do you accept Venmo?",
+          "nextScene": "Venmo Info"
+        }
+      ]
+    },
+    {
+      "id": "Discounted Price",
+      "description": "\"Yeah well the tour is only 30 bucks but the cure is $1570.\"",
+      "image": "./Scenes/Welcome/img/Welcome.jpg",
+      "audio": "audio/stevenson.mp3",
+      "options": [
+        {
+          "text": "Cure?",
+          "nextScene": "Cure"
+        },
+        {
+          "text": "Ok do you accept Venmo?",
+          "nextScene": "Venmo Info"
+        }
+      ]
+    },
+    {
+      "id": "Cure",
+      "description": "\"Yeah for the super rabies\"",
+      "image": "./Scenes/Welcome/img/Welcome.jpg",
+      "audio": "audio/stevenson.mp3",
+      "options": [
+        {
+          "text": "Super rabies?",
+          "nextScene": "Super Rabies"
+        }
+      ]
+    },
+    {
+      "id": "Super Rabies",
+      "description": [
+        "\"Look when I bit you I might passed something or another on, I don't know if you know this but squirrels don't normally talk. I'm a bit of a mutation cooked up here by one of UCSC finest alumni, Dr. Pete Guafani, I'm sure you'll learn about him if you choose to attend this lovely school.\"",
+        "\"But in so creating me he didn't just give me the ability to speak, what I'm trying to say here is that I don't just have your run of the mill rabies that your run of the mill hospital can take care of. I got this cure back at my place that'll fix you right up and I'll give you a tour of the campus on the way, how's that sound?\""
+      ],
+      "image": "./Scenes/Welcome/img/Welcome.jpg",
+      "audio": "audio/stevenson.mp3",
+      "options": [
+        {
+          "text": "Can't you just take me straight to your place?",
+          "nextScene": "Straight to your place"
+        },
+        {
+          "text": "Ok do you accept Venmo?",
+          "nextScene": "Venmo Info"
+        }
+      ]
+    },
+    {
+      "id": "Straight to your place",
+      "description": "\"Hey don't worry about this super rabies thing, look I'll take you on this tour the super rabies doesn't take super quick to get going anyways you wanted to see the campus for yourself anyways right.\"",
+      "image": "./Scenes/Welcome/img/Welcome.jpg",
+      "audio": "audio/stevenson.mp3",
+      "options": [
+        {
+          "text": "OK but I'm not paying $1600",
+          "nextScene": "Not Paying"
+        },
+        {
+          "text": "Ok do you accept Venmo?",
+          "nextScene": "Venmo Info"
+        }
+      ]
+    },
+    {
+      "id": "Not Paying",
+      "description": "\"Are we negotiating here kid, if so I like that, look I'll comp the cure if you pay the tour fee, that's only $30 heck of a deal isn't it.\"",
+      "image": "./Scenes/Welcome/img/Welcome.jpg",
+      "audio": "audio/stevenson.mp3",
+      "options": [
+        {
+          "text": "Ok do you accept Venmo?",
+          "nextScene": "Venmo Info"
+        }
+      ]
+    },
+    {
+      "id": "Venmo Info",
+      "description": [
+        "\"Yeah sure my venmo handle is @busterthesqui420\"",
+        "\"Alright let's get this party started, Which way you wanna go? Left, Right, up, down, all around, turn around maybe we'll go underground.\"",
+        "Buster keeps mumbling as if he is rapping but he's not saying anything that makes sense."
+      ],
+      "image": "./Scenes/Welcome/img/Welcome.jpg",
+      "audio": "audio/stevenson.mp3",
+      "options": [
+        {
+          "text": "Go to Mchenry",
+          "nextScene": "Mchenry"
+        },
+        {
+          "text": "Go to Bay Tree",
+          "nextScene": "Bay Tree"
+        }
+      ]
+    },
+    {
+      "id": "Mchenry",
+      "title": "Mchenry",
+      "description": "what the squirrel says about Mchenry",
+      "image": "./Scenes/Mchenry/img/Mchenry.jpg",
+      "audio": "audio/stevenson.mp3",
+      "options": [
+        {
+          "text": "Go deeper into Mchenry",
+          "nextScene": "Deeper Mchenry"
+        },
+        {
+          "text": "leave",
+          "nextScene": "Leave Mchenry"
+        }
+      ]
+    },
+    {
+      "id": "Deeper Mchenry",
+      "title": "Mchenry",
+      "description": "\"Alright you want to go up or down in this place?\"",
+      "image": "./Scenes/Mchenry/img/Mchenry.jpg",
+      "audio": "audio/stevenson.mp3",
+      "options": [
+        {
+          "text": "Up",
+          "nextScene": "Up Mchenry"
+        },
+        {
+          "text": "Down",
+          "nextScene": "Down Mchenry"
+        }
+      ]
+    },
+    {
+      "id": "Leave Mchenry",
+      "title": "Mchenry",
+      "description": "\"Alright we outa here\"",
+      "image": "./Scenes/Mchenry/img/Mchenry.jpg",
+      "audio": "audio/stevenson.mp3",
+      "options": [
+        {
+          "text": "Get on a Bcycle",
+          "nextScene": "Bike Path"
+        },
+        {
+          "text": "Go to Art Department",
+          "nextScene": "Art Department"
+        }
+      ]
+    },
+    {
+      "id": "Art Department",
+      "title": "Art Department",
+      "description": "\"Art Department Info\"",
+      "image": "./Scenes/Welcome/img/Welcome.jpg",
+      "audio": "audio/stevenson.mp3",
+      "options": [
+        {
+          "text": "Get on a Bcycle",
+          "nextScene": "Bike Path"
+        }
+      ]
+    },
+    {
+      "id": "Bike Path",
+      "title": "Bike Path",
+      "description": "\"Bike path Info\"",
+      "image": "./Scenes/Welcome/img/Welcome.jpg",
+      "audio": "audio/stevenson.mp3",
+      "options": [
+        {
+          "text": "Go Downtown",
+          "nextScene": "Downtown"
+        },
+        {
+          "text": "Go to The Village",
+          "nextScene": "The Village"
+        }
+      ]
+    },
+    {
+      "id": "Downtown",
+      "title": "Downtown",
+      "description": "\"Downtown Info\"",
+      "image": "./Scenes/Welcome/img/Welcome.jpg",
+      "audio": "audio/stevenson.mp3",
+      "options": [
+        {
+          "text": "Bus Back to Campus",
+          "nextScene": "Stevenson"
+        },
+        {
+          "text": "Go to The Village",
+          "nextScene": "The Village"
+        }
+      ]
+    },
+    {
+      "id": "The Village",
+      "title": "The Village",
+      "description": "\"The Village Info\"",
+      "image": "./Scenes/Welcome/img/Welcome.jpg",
+      "audio": "audio/stevenson.mp3",
+      "options": [
+        {
+          "text": "Go to East Remote",
+          "nextScene": "East Remote"
+        }
+      ]
+    },
+    {
+      "id": "East Remote",
+      "title": "East Remote",
+      "description": "\"East Remote Info\"",
+      "image": "./Scenes/Welcome/img/Welcome.jpg",
+      "audio": "audio/stevenson.mp3",
+      "options": [
+        {
+          "text": "Go to Opers",
+          "nextScene": "Opers"
+        },
+        {
+          "text": "Go to Bay Tree",
+          "nextScene": "Bay Tree"
+        }
+      ]
+    },
+    {
+      "id": "Opers",
+      "title": "Opers",
+      "description": "\"East Remote Info\"",
+      "image": "./Scenes/Welcome/img/Welcome.jpg",
+      "audio": "audio/stevenson.mp3",
+      "options": [
+        {
+          "text": "Go to Cowell",
+          "nextScene": "Cowell"
+        },
+        {
+          "text": "Go to Bay Tree",
+          "nextScene": "Bay Tree"
+        }
+      ]
+    },
+    {
+      "id": "Bay Tree",
+      "title": "Bay Tree Bookstore",
+      "description": "\"Bookstore Info\"",
+      "image": "./Scenes/Welcome/img/Welcome.jpg",
+      "audio": "audio/stevenson.mp3",
+      "options": [
+        
+      ]
+    },
+    {
       "id": "Stevenson",
-      "style": "stevenson.css",
-      "description": "Welcome! Our tour begins here at Stevenson College, known for its theme, Self and Society, which encourages students to explore their identities and roles in the broader world. Its core course focuses on critical thinking, ethical reflection, and the interplay between the individual and society. Stevenson offers a welcoming community with beautiful views of the Monterey Bay, emphasizing leadership, academic success, and personal growth. The college is also recognized for its vibrant student activities and strong traditions.",
+      "description": "Our tour begins here at Stevenson College, known for its theme, Self and Society, which encourages students to explore their identities and roles in the broader world. Its core course focuses on critical thinking, ethical reflection, and the interplay between the individual and society. Stevenson offers a welcoming community with beautiful views of the Monterey Bay, emphasizing leadership, academic success, and personal growth. The college is also recognized for its vibrant student activities and strong traditions.",
+      "narrative": "",
       "image": "TempStevenson.jpg",
       "audio": "audio/stevenson.mp3",
       "options": [
@@ -15,31 +485,29 @@
           "text": "Go to Merrill",
           "nextScene": "Merrill"
         }
-      ],
-      "items": []
+      ]
     },
     {
       "id": "Cowell",
-      "style": "cowell.css",
       "description": "Cowell College, the founding college of UC Santa Cruz, emphasizes the theme, The Pursuit of Truth in the Company of Friends. Known for its strong sense of community and intellectual engagement, it offers a stunning hilltop location with views of the Monterey Bay. Cowell provides a liberal arts-inspired approach to education, and its core course explores the nature of justice, critical thinking, and social responsibility. Its residence halls and apartments foster a close-knit, supportive environment for students. It is also home to a pretty fountain that usually isn't working!",
+      "narrative": "",
       "image": "Cowell.jpg",
       "audio": "audio/Cowell.mp3",
       "options": [
         {
-          "text": "Go to Stevenson",
-          "nextScene": "Stevenson"
+          "text": "Go to Cowell Dining Hall",
+          "nextScene": "Cowell Dining Hall"
         },
         {
-          "text": "Go to Merrill",
-          "nextScene": "Merrill"
+          "text": "Go to Cowell Coffee Shop",
+          "nextScene": "Cowell Coffee Shop"
         }
-      ],
-      "items": []
+      ]
     },
     {
       "id": "Merrill",
-      "style": "merrill.css",
       "description": "what the squirrel says about Merrill",
+      "narrative": "",
       "image": "Merrill.jpg",
       "audio": "audio/Merrill.mp3",
       "options": [
@@ -51,13 +519,12 @@
           "text": "Go to Crown",
           "nextScene": "Crown"
         }
-      ],
-      "items": []
+      ]
     },
     {
       "id": "Crown",
-      "style": "crown.css",
       "description": "what the squirrel says about Crown",
+      "narrative": "",
       "image": "crown.jpg",
       "audio": "audio/crown.mp3",
       "options": [
@@ -69,13 +536,12 @@
           "text": "Go to College 9",
           "nextScene": "College 9"
         }
-      ],
-      "items": []
+      ]
     },
     {
       "id": "College 9",
-      "style": "college9.css",
       "description": "what the squirrel says about College 9",
+      "narrative": "",
       "image": "college9.jpg",
       "audio": "audio/college9.mp3",
       "options": [
@@ -87,13 +553,12 @@
           "text": "Go to John Lewis",
           "nextScene": "John R. Lewis"
         }
-      ],
-      "items": []
+      ]
     },
     {
       "id": "John R. Lewis",
-      "style": "lewis.css",
       "description": "what the squirrel says about John R. Lewis",
+      "narrative": "",
       "image": "lewis.jpg",
       "audio": "audio/lewis.mp3",
       "options": [
@@ -105,13 +570,12 @@
           "text": "Go to Science Hill",
           "nextScene": "Science Hill"
         }
-      ],
-      "items": []
+      ]
     },
     {
       "id": "Science Hill",
-      "style": "science.css",
       "description": "what the squirrel says about Science Hill",
+      "narrative": "",
       "image": "science.jpg",
       "audio": "audio/science.mp3",
       "options": [
@@ -123,13 +587,12 @@
           "text": "Go to Kresge",
           "nextScene": "Kresge"
         }
-      ],
-      "items": []
+      ]
     },
     {
       "id": "Kresge",
-      "style": "kresge.css",
       "description": "what the squirrel says about Kresge",
+      "narrative": "",
       "image": "kresge.jpg",
       "audio": "audio/kresge.mp3",
       "options": [
@@ -141,13 +604,12 @@
           "text": "Go to Porter",
           "nextScene": "Porter"
         }
-      ],
-      "items": []
+      ]
     },
     {
       "id": "Porter",
-      "style": "porter.css",
       "description": "what the squirrel says about Porter",
+      "narrative": "",
       "image": "porter.jpg",
       "audio": "audio/porter.mp3",
       "options": [
@@ -159,13 +621,12 @@
           "text": "Go to Rachel Carson",
           "nextScene": "Rachel Carson"
         }
-      ],
-      "items": []
+      ]
     },
     {
       "id": "Rachel Carson",
-      "style": "carson.css",
       "description": "what the squirrel says about Rachel Carson",
+      "narrative": "",
       "image": "carson.jpg",
       "audio": "audio/carson.mp3",
       "options": [
@@ -177,13 +638,12 @@
           "text": "Go to Oakes",
           "nextScene": "Oakes"
         }
-      ],
-      "items": []
+      ]
     },
     {
       "id": "Oakes",
-      "style": "oakes.css",
       "description": "what the squirrel says about Oakes",
+      "narrative": "",
       "image": "oakes.jpg",
       "audio": "audio/oakes.mp3",
       "options": [
@@ -195,13 +655,12 @@
           "text": "Rave Time!",
           "nextScene": "Rave"
         }
-      ],
-      "items": []
+      ]
     },
     {
       "id": "Rave",
-      "style": "rave.css",
       "description": "boots and cats",
+      "narrative": "",
       "image": "oakes.jpg",
       "audio": "audio/oakes.mp3",
       "options": [
@@ -213,8 +672,7 @@
           "text": "Rave Time!",
           "nextScene": "Rave"
         }
-      ],
-      "items": []
+      ]
     }
   ]
 }

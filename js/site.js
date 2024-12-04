@@ -4,45 +4,89 @@
 
 
 let tourData = {};
-let currentSceneId = "Stevenson"; //first scene right now is Stevenson (can change that later)
+let currentSceneId = "Welcome"; //first scene
+let currentDescriptionIndex = 0;
+let sceneHistory = []; // Array to keep track of visited scenes
 
 // Function to load and display a scene
 function loadScene(sceneId) {
+  // Add the current scene to the history before changing it
+  if (currentSceneId !== sceneId) {
+    sceneHistory.push(currentSceneId);
+  }
+
   // Find the scene by ID
   const scene = tourData.scenes.find(s => s.id === sceneId);
   if (!scene) return; // Exit if the scene is not found
 
   // Update the scene title
-  $("#scene-title").text(scene.id);
+  $("#scene-title").text(scene.title);
 
-  // Update the description
-  $("#scene-description").text(scene.description);
+  // Reset the description index
+  currentDescriptionIndex = 0;
+
+  // Function to update the description
+  function updateDescription() {
+    if (Array.isArray(scene.description)) {
+      $("#scene-description").text(scene.description[currentDescriptionIndex]);
+    } else {
+      $("#scene-description").text(scene.description);
+    }
+  }
+  
+  //load the CSS for this specific scene
+  $("#theme-style").attr("href", `./Scenes/${scene.id}/css/${scene.style}`);
 
   // Set the background image
-  $("body").css("background-image", `url(./Scenes/${scene.id}/img/${scene.image})`);
+  $("body").css("background-image", `url(${scene.image})`);
 
   // Update the audio
   $("#scene-audio").attr("src", `./Scenes/${scene.id}/${scene.audio}`);
 
-  //load the CSS for this specific scene
-  $("#theme-style").attr("href", `./Scenes/${scene.id}/css/${scene.style}`);
-
   // Clear and add options
   $("#options-container").empty();
-  scene.options.forEach(option => {
-    const button = $("<button></button>").text(option.text);
-    button.on("click", function() {
-      resetScene(); // Reset the scene
-      loadScene(option.nextScene); // Load the next scene on click
+
+  // Update the description
+  updateDescription();
+
+  // Handle multiple descriptions
+  if (Array.isArray(scene.description) && scene.description.length > 1) {
+    const nextButton = $("<button></button>").text("Next");
+    nextButton.on("click", function() {
+      currentDescriptionIndex++;
+      if (currentDescriptionIndex < scene.description.length) {
+        updateDescription();
+      } else {
+        // Show the options once all descriptions are displayed
+        $("#options-container").empty();
+        scene.options.forEach(option => {
+          const button = $("<button></button>").text(option.text);
+          button.on("click", function() {
+            resetScene(); // Reset the scene
+            loadScene(option.nextScene); // Load the next scene on click
+          });
+          $("#options-container").append(button);
+        });
+      }
     });
-    $("#options-container").append(button);
-  });
+    $("#options-container").append(nextButton);
+  } else {
+    // Show the options if there is only one description
+    scene.options.forEach(option => {
+      const button = $("<button></button>").text(option.text);
+      button.on("click", function() {
+        resetScene(); // Reset the scene
+        loadScene(option.nextScene); // Load the next scene on click
+      });
+      $("#options-container").append(button);
+    });
+  }
 }
 
-function resetScene(){
-  //hide the thought bubble
+function resetScene() {
+  // Hide the thought bubble
   $("#thought,#tail-box").css("opacity", "0");
-  //restart animation
+  // Restart animation
   $("#play").attr("class", "play-container animated");
 }
 
@@ -52,6 +96,15 @@ $(document).ready(function() {
     tourData = data;
     loadScene(currentSceneId); // Load the initial scene
   });
+});
+
+// Event listener for the "Go to Previous Scene" button
+$("#previous-scene-button").on("click", function() {
+  console.log("Previous scene button clicked");
+  if (sceneHistory.length > 0) {
+    const previousSceneId = sceneHistory.pop();
+    loadScene(previousSceneId);
+  }
 });
 
 // Event listener for the audio
