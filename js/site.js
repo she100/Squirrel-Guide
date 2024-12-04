@@ -10,8 +10,10 @@ let sceneHistory = []; // Array to keep track of visited scenes
 
 // Function to load and display a scene
 function loadScene(sceneId) {
+  console.log(`Loading Scene: ${sceneId}`);
   // Add the current scene to the history before changing it
   if (currentSceneId !== sceneId) {
+    console.log(`New Scene, you have visited: ${sceneHistory}`);
     sceneHistory.push(currentSceneId);
   }
 
@@ -81,6 +83,8 @@ function loadScene(sceneId) {
       $("#options-container").append(button);
     });
   }
+  // Update the current scene ID
+  currentSceneId = sceneId;
 }
 
 function resetScene() {
@@ -100,7 +104,7 @@ $(document).ready(function() {
 
 // Event listener for the "Go to Previous Scene" button
 $("#previous-scene-button").on("click", function() {
-  console.log("Previous scene button clicked");
+  console.log(`Going back to the previous scene from: ${currentSceneId} to ${sceneHistory[sceneHistory.length - 1]}`);
   if (sceneHistory.length > 0) {
     const previousSceneId = sceneHistory.pop();
     loadScene(previousSceneId);
