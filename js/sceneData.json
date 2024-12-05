@@ -916,6 +916,7 @@
       "id": "Rave",
       "title": "Forest Rave!!",
       "description": "boots and cats",
+      "style": "./Scenes/Rave/css/rave.css",
       "image": "./Scenes/Rave/img/rave.jpg",
       "audio": "./Scenes/Rave/audio/Bass So Loud final1.mp3",
       "options": [
