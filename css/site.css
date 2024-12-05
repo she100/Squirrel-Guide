@@ -74,13 +74,9 @@ body {
   text-transform: uppercase;
   line-height: 1;
   text-align: center;
-  color: #fff;
-  background: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(121, 9, 115, 1) 46%,
-    rgba(0, 212, 255, 1) 100%
-  );
+  color: #fdc700;
+  background: #003c6c;
+  padding: 10px;
 }
 
 #squirrel {
@@ -101,7 +97,7 @@ body {
   width: 43%;
   height: 36.7%;
   padding: 20px;
-  background: #cf5858;
+  background: #003c6c;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
@@ -112,9 +108,17 @@ body {
   height: 0;
   border-top: 20px solid transparent;
   border-bottom: 20px solid transparent;
-  border-left: 83px solid #cf5858;
+  border-left: 83px solid #003c6c;
   align-self: center;
   opacity: 0;
+}
+
+#scene-description {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
 }
 
 #options-container {
@@ -167,14 +171,15 @@ body {
 .play-container a,
 .play-container button {
   text-decoration: none;
-  background-image: linear-gradient(
+  background-color: #003c6c;
+  /* background-image: linear-gradient(
     to right,
     #6400a4,
     #5e07b5,
     #5411c6,
     #411bd8,
     #1225eb
-  );
+  ); */
   border: 2px dotted white;
   color: aliceblue;
   border-radius: 50%;
