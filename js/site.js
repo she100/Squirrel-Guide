@@ -17,6 +17,10 @@ function loadScene(sceneId) {
     sceneHistory.push(currentSceneId);
   }
 
+  if (sceneId === "Rave") {
+    addRaveElements();
+  }
+
   // Find the scene by ID
   const scene = tourData.scenes.find(s => s.id === sceneId);
   if (!scene) return; // Exit if the scene is not found
@@ -43,7 +47,7 @@ function loadScene(sceneId) {
   $("body").css("background-image", `url(${scene.image})`);
 
   // Update the audio
-  $("#scene-audio").attr("src", `./Scenes/${scene.id}/${scene.audio}`);
+  $("#scene-audio").attr("src", `${scene.audio}`);
 
   // Clear and add options
   $("#options-container").empty();
@@ -89,6 +93,7 @@ function typeDescription() {
           .start()
         if(index < scene.description.length - 1) { // only delete if there are more descriptions
           typewriter.deleteAll(1).start(); // Delete the description
+          typewriter.pauseFor(500); // Pause before typing the next description
         }
       });
     } else {
@@ -97,11 +102,19 @@ function typeDescription() {
     }
   }}
 
+// add lasers
+function addRaveElements() {
+  $("#header").prepend('<div class="lasers"><div class="l"></div></div>');
+  $("#header").append('<div class="lasers"><div id="second"></div></div>');
+}
+
 function resetScene() {
   // Hide the thought bubble
   $("#thought,#tail-box").css("opacity", "0");
   // Restart animation
   $("#play").attr("class", "play-container animated");
+
+  $(".lasers").hide(); // make sure lasers are hidden
 }
 
 // Load the JSON data and initialize the first scene
@@ -130,5 +143,9 @@ $("#play-button").on("click", function() {
   //stop play button animation
   $("#play").attr("class", "play-container");
   // Type the description
-  typeDescription();  
+  typeDescription();
+  
+  if (currentSceneId === "Rave") {
+    $(".lasers").show();
+  }
 });

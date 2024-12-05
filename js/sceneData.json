@@ -754,6 +754,7 @@
       "id": "Earth and Marine",
       "title": "Earth and Marine Science Building",
       "description": "\"Here is the Earth and Marine Sciences building. There are classrooms and lecture halls all throughout. I bet you can't guess what the topics of most of the classes held here...\"",
+      "style": "./Scenes/EarthMarine/css/earthMarine.css",
       "image": "./Scenes/EarthMarine/img/earth-marine.jpg",
       "audio": "audio/science.mp3",
       "options": [
@@ -864,6 +865,7 @@
       "id": "Family Student Housing",
       "title": "Family Student Housing",
       "description": "\"what the squirrel says about family student housing\"",
+      "style": "./Scenes/FamilyHousing/css/familyHousing.css",
       "image": "./Scenes/FamilyHousing/img/familyhousing.jpg",
       "audio": "audio/oakes.mp3",
       "options": [
@@ -914,8 +916,9 @@
       "id": "Rave",
       "title": "Forest Rave!!",
       "description": "boots and cats",
+      "style": "./Scenes/Rave/css/rave.css",
       "image": "./Scenes/Rave/img/rave.jpg",
-      "audio": "audio/oakes.mp3",
+      "audio": "./Scenes/Rave/audio/Bass So Loud final1.mp3",
       "options": [
         {
           "text": "Had Enough?",

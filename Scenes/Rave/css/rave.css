@@ -2,24 +2,69 @@
 
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
 
-#scene-title {
-  font-family: "Neucha", sans-serif;
-  font-size: 108px;
-  font-weight: 500;
-  margin: 0;
-  text-transform: uppercase;
-  line-height: 1;
-  text-align: center;
-  color: #fff;
-  background: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(121, 9, 115, 1) 46%,
-    rgba(0, 212, 255, 1) 100%
-  );
+.lasers {
+  display: flex;
+  align-items: center;
+  transform: perspective(1px) rotateX(90deg);
+  transform-style: preserve-3d;
+  display: none;
+}
+@keyframes laserAnimation {
+  0%,
+  100% {
+    height: 0;
+    transform: translateZ(-20px);
+  }
+  25% {
+    height: 25px;
+    transform: translateZ(20px);
+  }
+  50% {
+    height: 50px;
+    transform: translateZ(-20px);
+  }
+  75% {
+    height: 75px;
+    transform: translateZ(20px);
+  }
 }
 
-#squirrel {
-  width: 25%;
-  /* border: solid 4px red; */
+.lasers .l {
+  background-color: rgba(0, 128, 0, 0.804);
+  animation: laserAnimation 3s ease-in-out infinite,
+    circularMotion 5s linear infinite;
+  width: 10px;
+  height: 0;
+  box-shadow: 0 0 10px green; /* optional */
 }
+
+.lasers #second {
+  background-color: rgba(255, 0, 0, 0.804);
+  animation: laserAnimation 3s ease-in-out infinite,
+    circularMotion 5s linear infinite;
+  width: 10px;
+  height: 0;
+  box-shadow: 0 0 10px red; /* optional */
+  animation-delay: 0.5s;
+}
+/* .lasers .l:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.lasers .l:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.lasers .l:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.lasers .l:nth-child(5) {
+  animation-delay: 0.5s;
+}
+.lasers .l:nth-child(6) {
+  animation-delay: 0.6s;
+}
+.lasers .l:nth-child(7) {
+  animation-delay: 0.7s;
+}
+.lasers .l:nth-child(8) {
+  animation-delay: 0.8s;
+} */
