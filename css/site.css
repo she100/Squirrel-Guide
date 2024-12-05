@@ -33,6 +33,7 @@ body {
 #squirrel-container {
   display: flex;
   justify-content: center;
+  min-width: 100%;
   /* border: solid 4px blue; */
 }
 
