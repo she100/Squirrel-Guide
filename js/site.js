@@ -43,7 +43,7 @@ function loadScene(sceneId) {
   $("body").css("background-image", `url(${scene.image})`);
 
   // Update the audio
-  $("#scene-audio").attr("src", `./Scenes/${scene.id}/${scene.audio}`);
+  $("#scene-audio").attr("src", `${scene.audio}`);
 
   // Clear and add options
   $("#options-container").empty();
@@ -89,6 +89,7 @@ function typeDescription() {
           .start()
         if(index < scene.description.length - 1) { // only delete if there are more descriptions
           typewriter.deleteAll(1).start(); // Delete the description
+          typewriter.pauseFor(500); // Pause before typing the next description
         }
       });
     } else {
