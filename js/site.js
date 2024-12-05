@@ -37,7 +37,7 @@ function loadScene(sceneId) {
   }
   
   //load the CSS for this specific scene
-  $("#theme-style").attr("href", `./Scenes/${scene.id}/css/${scene.style}`);
+  $("#theme-style").attr("href", `${scene.style}`);
 
   // Set the background image
   $("body").css("background-image", `url(${scene.image})`);
@@ -51,41 +51,51 @@ function loadScene(sceneId) {
   // Update the description
   updateDescription();
 
-  // Handle multiple descriptions
-  if (Array.isArray(scene.description) && scene.description.length > 1) {
-    const nextButton = $("<button></button>").text("Next");
-    nextButton.on("click", function() {
-      currentDescriptionIndex++;
-      if (currentDescriptionIndex < scene.description.length) {
-        updateDescription();
-      } else {
-        // Show the options once all descriptions are displayed
-        $("#options-container").empty();
-        scene.options.forEach(option => {
-          const button = $("<button></button>").text(option.text);
-          button.on("click", function() {
-            resetScene(); // Reset the scene
-            loadScene(option.nextScene); // Load the next scene on click
-          });
-          $("#options-container").append(button);
-        });
-      }
+  //show the options
+  scene.options.forEach(option => {
+    const button = $("<button></button>").text(option.text);
+    button.on("click", function() {
+      resetScene(); // Reset the scene
+      loadScene(option.nextScene); // Load the next scene on click
     });
-    $("#options-container").append(nextButton);
-  } else {
-    // Show the options if there is only one description
-    scene.options.forEach(option => {
-      const button = $("<button></button>").text(option.text);
-      button.on("click", function() {
-        resetScene(); // Reset the scene
-        loadScene(option.nextScene); // Load the next scene on click
-      });
-      $("#options-container").append(button);
-    });
-  }
+    $("#options-container").append(button);
+  });
   // Update the current scene ID
   currentSceneId = sceneId;
 }
+
+// Uses the TypewriterJS library to type out the description
+function typeDescription() { 
+  const descriptionContainer = document.getElementById("scene-description");
+  const scene = tourData.scenes.find(s => s.id === currentSceneId); // Find the current scene
+
+  if (scene && scene.description) { // If the scene has a description
+    // Clear previous content
+    descriptionContainer.innerHTML = "";
+
+    // Initialize TypewriterJS
+    const typewriter = new Typewriter(descriptionContainer, {
+      loop: false, // No looping
+      delay: 20,   // Typing speed
+      cursor: "", // Cursor appearance
+      // deleteSpeed: 10 // Delete speed
+    });
+
+    if (Array.isArray(scene.description)) { // If there are multiple descriptions
+      scene.description.forEach((description, index) => { // Loop through each description
+        typewriter // Type the description
+          .typeString(description)
+          .pauseFor(1000)
+          .start()
+        if(index < scene.description.length - 1) { // only delete if there are more descriptions
+          typewriter.deleteAll(1).start(); // Delete the description
+        }
+      });
+    } else {
+      // Single description
+      typewriter.typeString(scene.description).start();
+    }
+  }}
 
 function resetScene() {
   // Hide the thought bubble
@@ -111,7 +121,7 @@ $("#previous-scene-button").on("click", function() {
   }
 });
 
-// Event listener for the audio
+// Event listener to play the audio and show the thought bubble
 $("#play-button").on("click", function() {
   //play the audio for that scene
   $("#scene-audio").trigger("play");
@@ -119,4 +129,6 @@ $("#play-button").on("click", function() {
   $("#thought,#tail-box").css("opacity", "1");
   //stop play button animation
   $("#play").attr("class", "play-container");
+  // Type the description
+  typeDescription();  
 });
