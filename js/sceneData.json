@@ -5,7 +5,7 @@
       "title": "Welcome",
       "description": "\"Welcome to UCSC. Home of the Banana Slug. Apply here and you too can be a slug. But if you're not too sure yet come on by and schedule a tour with us we'll show you what it means to be a slug.\"",
       "image": "./Scenes/Welcome/img/Welcome.jpg",
-      "audio": "audio/stevenson.mp3",
+      "audio": "./Scenes/Welcome/audio/angrySquirrel.mp3",
       "options": [
         {
           "text": "Apply Now",
@@ -22,7 +22,7 @@
       "title": "Congratulations!!",
       "description": "\"You are now a slug, gimme all your money!\"",
       "image": "./Scenes/Congrats/img/congrats.jpeg",
-      "audio": "audio/stevenson.mp3",
+      "audio": "",
       "options": [
         {
           "text": "Or just follow the damn squirrel!",
@@ -39,7 +39,7 @@
         "You take a few steps toward the speaker but you feel a sharp pain in your ankle."
       ],
       "image": "./Scenes/Welcome/img/Welcome.jpg",
-      "audio": "audio/stevenson.mp3",
+      "audio": "",
       "options": [
         {
           "text": "Scream in pain!",
@@ -61,7 +61,7 @@
         "\"oo hoo hoo you're gonna be hearing from my lawyer you little shit.\""
       ],
       "image": "./Scenes/Welcome/img/Welcome.jpg",
-      "audio": "audio/stevenson.mp3",
+      "audio": "",
       "options": [
         {
           "text": "Scream in pain!",
@@ -74,7 +74,7 @@
       "title": "AHHHHH!!",
       "description": "\"Ah come on you big baby it was just a little nibble\"",
       "image": "./Scenes/Welcome/img/Welcome.jpg",
-      "audio": "audio/stevenson.mp3",
+      "audio": "",
       "options": [
         {
           "text": "Look Down!",
@@ -84,14 +84,14 @@
     },
     {
       "id": "Look Down",
-      "title": " ",
+      "title": "",
       "description": [
         "You see a squirrel swishing around a liquid in his cheeks.",
         "He spits out a lougie of your blood and a chunk of flesh",
         "He scrunches up his face and says, \"B-positive!\"."
       ],
       "image": "./Scenes/Welcome/img/Welcome.jpg",
-      "audio": "audio/stevenson.mp3",
+      "audio": "",
       "options": [
         {
           "text": "Dial 911",
@@ -108,7 +108,7 @@
         "He looks up at you, offended he says, \"Hey seriously you gonna get the cops involved? You're lucky I stopped you when I did, because the cops don't need to know nothing about my operation here.\""
       ],
       "image": "./Scenes/Welcome/img/Welcome.jpg",
-      "audio": "audio/stevenson.mp3",
+      "audio": "",
       "options": [
         {
           "text": "Your operation?",
@@ -125,7 +125,7 @@
         "\"look I can see your confused, lets start from the beginning ok. My name's Buster what's yours?\""
       ],
       "image": "./Scenes/Welcome/img/Welcome.jpg",
-      "audio": "audio/stevenson.mp3",
+      "audio": "",
       "options": [
         {
           "text": "Tell him your name",
@@ -143,7 +143,7 @@
         "He points to his chest where a metal pin is attached, you can see the words tour guide scratched into it . "
       ],
       "image": "./Scenes/Welcome/img/Welcome.jpg",
-      "audio": "audio/stevenson.mp3",
+      "audio": "",
       "options": [
         {
           "text": "So you're with the school?",
@@ -156,7 +156,7 @@
       "title": " ",
       "description": "\"I'm not really with the school perse, but not everyone gets a spot with the quote unquote 'official tour guides'. And thats where I step in, for a much discounted price I can give you a tour much better than the ones those smucks walking through the forest could ever give you.\"",
       "image": "./Scenes/Welcome/img/Welcome.jpg",
-      "audio": "audio/stevenson.mp3",
+      "audio": "",
       "options": [
         {
           "text": "Thanks but I'm good.",
@@ -176,7 +176,7 @@
         "\"Eh, you don't have much of a choice if I'm gonna be real with you. You see I kinda got a case of the rabies.\""
       ],
       "image": "./Scenes/Welcome/img/Welcome.jpg",
-      "audio": "audio/stevenson.mp3",
+      "audio": "",
       "options": [
         {
           "text": "Ummmm?",
@@ -189,7 +189,7 @@
       "title": " ",
       "description": "\"hey hey don't freak out just yet, I got a cure back at my place but if I'm gonna bring you there you might as well go on my tour first well we get there.\"",
       "image": "./Scenes/Welcome/img/Welcome.jpg",
-      "audio": "audio/stevenson.mp3",
+      "audio": "",
       "options": [
         {
           "text": "Ok? How much is the tour?",
@@ -202,7 +202,7 @@
       "title": " ",
       "description": "\"Sixteen hundred dollars.\"",
       "image": "./Scenes/Welcome/img/Welcome.jpg",
-      "audio": "audio/stevenson.mp3",
+      "audio": "",
       "options": [
         {
           "text": "What! That's the discounted price",
@@ -219,7 +219,7 @@
       "title": " ",
       "description": "\"Yeah well the tour is only 30 bucks but the cure is $1570.\"",
       "image": "./Scenes/Welcome/img/Welcome.jpg",
-      "audio": "audio/stevenson.mp3",
+      "audio": "",
       "options": [
         {
           "text": "Cure?",
@@ -236,7 +236,7 @@
       "title": " ",
       "description": "\"Yeah for the super rabies\"",
       "image": "./Scenes/Welcome/img/Welcome.jpg",
-      "audio": "audio/stevenson.mp3",
+      "audio": "",
       "options": [
         {
           "text": "Super rabies?",
@@ -252,7 +252,7 @@
         "\"But in so creating me he didn't just give me the ability to speak, what I'm trying to say here is that I don't just have your run of the mill rabies that your run of the mill hospital can take care of. I got this cure back at my place that'll fix you right up and I'll give you a tour of the campus on the way, how's that sound?\""
       ],
       "image": "./Scenes/Welcome/img/Welcome.jpg",
-      "audio": "audio/stevenson.mp3",
+      "audio": "",
       "options": [
         {
           "text": "Can't you just take me straight to your place?",
@@ -269,7 +269,7 @@
       "title": " ",
       "description": "\"Hey don't worry about this super rabies thing, look I'll take you on this tour the super rabies doesn't take super quick to get going anyways you wanted to see the campus for yourself anyways right.\"",
       "image": "./Scenes/Welcome/img/Welcome.jpg",
-      "audio": "audio/stevenson.mp3",
+      "audio": "",
       "options": [
         {
           "text": "OK but I'm not paying $1600",
@@ -286,7 +286,7 @@
       "title": " ",
       "description": "\"Are we negotiating here kid, if so I like that, look I'll comp the cure if you pay the tour fee, that's only $30 heck of a deal isn't it.\"",
       "image": "./Scenes/Welcome/img/Welcome.jpg",
-      "audio": "audio/stevenson.mp3",
+      "audio": "",
       "options": [
         {
           "text": "Ok do you accept Venmo?",
@@ -303,7 +303,7 @@
         "Buster keeps mumbling as if he is rapping but he's not saying anything that makes sense."
       ],
       "image": "./Scenes/Welcome/img/Welcome.jpg",
-      "audio": "audio/stevenson.mp3",
+      "audio": "",
       "options": [
         {
           "text": "Go to Mchenry",
@@ -320,7 +320,7 @@
       "title": "Mchenry",
       "description": "\"Here is Mchenry Library, the biggest library on campus. It has 4 floors and is a great place to study. I like to go in there and eat the books, they're delicious!\"",
       "image": "./Scenes/Mchenry/img/Mchenry.jpg",
-      "audio": "audio/stevenson.mp3",
+      "audio": "",
       "options": [
         {
           "text": "Go deeper into Mchenry",
@@ -337,7 +337,7 @@
       "title": "Mchenry",
       "description": "\"Alright you want to go up or down in this place?\"",
       "image": "./Scenes/Mchenry/img/Mchenry.jpg",
-      "audio": "audio/stevenson.mp3",
+      "audio": "",
       "options": [
         {
           "text": "Up",
@@ -354,7 +354,7 @@
       "title": "Mchenry",
       "description": "\"Here is upstairs at Mchenry. Every time I come in this place I find a new area I haven't seen before where these kids study. It's HUGE!\"",
       "image": "./Scenes/Mchenry/img/UpMchenry.jpg",
-      "audio": "audio/stevenson.mp3",
+      "audio": "",
       "options": [
         {
           "text": "Leave",
@@ -371,7 +371,7 @@
       "title": "Mchenry",
       "description": "\"Here is the ground floor. This is where you can get some avocado toast. They always kick me out of here for going in their trash. You probably won't have that problem though.\"",
       "image": "./Scenes/Mchenry/img/DownMchenry.jpg",
-      "audio": "audio/stevenson.mp3",
+      "audio": "",
       "options": [
         {
           "text": "Leave",
@@ -388,7 +388,7 @@
       "title": "Mchenry",
       "description": "\"Alright we outa here. Where to next child?\"",
       "image": "./Scenes/Mchenry/img/LeaveMchenry.jpg",
-      "audio": "audio/stevenson.mp3",
+      "audio": "",
       "options": [
         {
           "text": "Get on a Bcycle",
@@ -409,7 +409,7 @@
       "title": "Art Department",
       "description": "\"Art Department Info\"",
       "image": "./Scenes/ArtDept/img/ArtDepartment.jpg",
-      "audio": "audio/stevenson.mp3",
+      "audio": "",
       "options": [
         {
           "text": "Go to Porter",
@@ -434,7 +434,7 @@
       "title": "Bike Path",
       "description": "\"Bike path Info\"",
       "image": "./Scenes/BikePath/img/bikepath.jpg",
-      "audio": "audio/stevenson.mp3",
+      "audio": "",
       "options": [
         {
           "text": "Go Downtown",
@@ -447,7 +447,7 @@
       "title": "Downtown",
       "description": "\"This is downtown Santa Cruz, its a short bus or bike from campus. There is all sorts of things to do here, one of my favorites is Abbot Square live music on Saturdays!\"",
       "image": "./Scenes/Downtown/img/downtown.jpg",
-      "audio": "audio/stevenson.mp3",
+      "audio": "",
       "options": [
         {
           "text": "Bus to Bay Tree Bookstore on campus",
@@ -460,7 +460,7 @@
       "title": "The Village",
       "description": "\"The Village Info\"",
       "image": "./Scenes/Village/img/TheVillage.jpg",
-      "audio": "audio/stevenson.mp3",
+      "audio": "",
       "options": [
         {
           "text": "Go to East Remote",
@@ -481,7 +481,7 @@
       "title": "East Remote",
       "description": "\"This is just a big ass parking lot. If you ever live off campus as an undergrad you will most likely be parking here.\"",
       "image": "./Scenes/EastRemote/img/EastRemote.jpg",
-      "audio": "audio/stevenson.mp3",
+      "audio": "",
       "options": [
         {
           "text": "Go to Opers",
@@ -498,7 +498,7 @@
       "title": "Opers",
       "description": "\"This is the view that made me want to live on UCSC's campus. You can do all sorts of activities here such as beach volleyball, slack lining, or any sport that is played on grass!\"",
       "image": "./Scenes/Opers/img/opers.jpg",
-      "audio": "audio/stevenson.mp3",
+      "audio": "",
       "options": [
         {
           "text": "Go to Cowell",
@@ -519,7 +519,7 @@
       "title": "Bay Tree Bookstore",
       "description": "\"Here is Bay Tree Bookstore. You can buy all sorts of banana slug merch, but unfortunately no squirrel merch. You can also buy books for your classes, school supplies, and technology such as laptops, ipads, or headphones.\"",
       "image": "./Scenes/BayTree/img/baytreebookstore.jpg",
-      "audio": "audio/stevenson.mp3",
+      "audio": "",
       "options": [
         {
           "text": "Go to Cowell",
@@ -540,7 +540,7 @@
       "title": "Stevenson",
       "description": "Stevenson College is known for its theme, Self and Society, which encourages students to explore their identities and roles in the broader world. Its core course focuses on critical thinking, ethical reflection, and the interplay between the individual and society. Stevenson offers a welcoming community with beautiful views of the Monterey Bay, emphasizing leadership, academic success, and personal growth. The college is also recognized for its vibrant student activities and strong traditions.",
       "image": "./Scenes/Stevenson/img/Stevenson.jpg",
-      "audio": "audio/stevenson.mp3",
+      "audio": "",
       "options": [
         {
           "text": "Go to Opers",
@@ -557,7 +557,7 @@
       "title": "Cowell",
       "description": "\"Cowell College, the founding college of UC Santa Cruz, emphasizes the theme, The Pursuit of Truth in the Company of Friends. Known for its strong sense of community and intellectual engagement, it offers a stunning hilltop location with views of the Monterey Bay. Cowell provides a liberal arts-inspired approach to education, and its core course explores the nature of justice, critical thinking, and social responsibility. Its residence halls and apartments foster a close-knit, supportive environment for students. It is also home to a pretty fountain that usually isn't working!\"",
       "image": "./Scenes/Cowell/img/cowell.jpg",
-      "audio": "audio/Cowell.mp3",
+      "audio": "",
       "options": [
         {
           "text": "Go to Cowell Dining Hall",
@@ -578,7 +578,7 @@
       "title": "Cowell Dining Hall",
       "description": "\"This is the dining hall for Cowell and Stevenson colleges. It is on the older side, but has amazing views and lots of outdoor seating!\"",
       "image": "./Scenes/Cowell/img/diningHall.jpg",
-      "audio": "audio/Cowell.mp3",
+      "audio": "",
       "options": [
         {
           "text": "Go to Stevenson",
@@ -603,7 +603,7 @@
       "title": "Cowell Coffee Shop",
       "description": "\"This is the coffee shop in Cowell College. It is one of many places to get food here on campus. They serve coffee, tea, salads, bagels, BUT NO ACORNS!!??\"",
       "image": "./Scenes/Cowell/img/CowellCoffee.jpg",
-      "audio": "audio/Cowell.mp3",
+      "audio": "",
       "options": [
         {
           "text": "Go to Stevenson",
@@ -616,7 +616,7 @@
       "title": "Merrill",
       "description": "what the squirrel says about Merrill",
       "image": "./Scenes/Merrill/img/Merrill.jpg",
-      "audio": "audio/Merrill.mp3",
+      "audio": "",
       "options": [
         {
           "text": "Go to Cowell",
@@ -633,7 +633,7 @@
       "title": "Crown",
       "description": "what the squirrel says about Crown",
       "image": "./Scenes/Crown/img/crown.webp",
-      "audio": "audio/crown.mp3",
+      "audio": "",
       "options": [
         {
           "text": "Go to Merrill",
@@ -659,7 +659,7 @@
       "description": "\"what the squirrel says about College 9 and John R. Lewis\"",
       "style": "./Scenes/9-10/css/9-10.css",
       "image": "./Scenes/9-10/img/9-10.webp",
-      "audio": "audio/college9.mp3",
+      "audio": "",
       "options": [
         {
           "text": "Go to 9/10 Dining Hall",
@@ -681,7 +681,7 @@
       "description": "\"This is one of the better dining halls on campus. It is the second newest one and there are lots of food options!\"",
       "style": "./Scenes/9-10/css/9-10Dining.css",
       "image": "./Scenes/9-10/img/9-10Dining.webp",
-      "audio": "audio/college9.mp3",
+      "audio": "",
       "options": [
         {
           "text": "Go into the woods",
@@ -707,7 +707,7 @@
         "\"Wait shhhh... do you hear that?? I hear some fire beats that way. You want to follow it?\""
       ],
       "image": "./Scenes/9-10/img/woods.jpg",
-      "audio": "audio/college9.mp3",
+      "audio": "",
       "options": [
         {
           "text": "Rave Time!",
@@ -720,7 +720,7 @@
       "title": "Baskin Engineering",
       "description": "what the squirrel says about Baskin Engineering",
       "image": "./Scenes/Baskin/img/baskin.png",
-      "audio": "audio/science.mp3",
+      "audio": "",
       "options": [
         {
           "text": "Go to S&E Library",
@@ -738,7 +738,7 @@
       "description": "S&E stands for Science and Engineering. We just use a lot of slang around here. This is another library with 3 floors to study on. Think of it like Mchenry's little brother.",
       "style": "./Scenes/S&E/css/S&E.css",
       "image": "./Scenes/S&E/img/S&E.jpg",
-      "audio": "audio/science.mp3",
+      "audio": "",
       "options": [
         {
           "text": "Earth and Marine",
@@ -756,7 +756,7 @@
       "description": "\"Here is the Earth and Marine Sciences building. There are classrooms and lecture halls all throughout. I bet you can't guess what the topics of most of the classes held here...\"",
       "style": "./Scenes/EarthMarine/css/earthMarine.css",
       "image": "./Scenes/EarthMarine/img/earth-marine.jpg",
-      "audio": "audio/science.mp3",
+      "audio": "",
       "options": [
         {
           "text": "Go to Porter",
@@ -773,7 +773,7 @@
       "title": "Kresge",
       "description": "what the squirrel says about Kresge",
       "image": "./Scenes/Kresge/img/kresge.jpg",
-      "audio": "audio/kresge.mp3",
+      "audio": "",
       "options": [
         {
           "text": "Go to Porter",
@@ -794,7 +794,7 @@
       "title": "Porter",
       "description": "what the squirrel says about Porter",
       "image": "./Scenes/Porter/img/porter.jpg",
-      "audio": "audio/porter.mp3",
+      "audio": "",
       "options": [
         {
           "text": "Go to Kresge",
@@ -811,7 +811,7 @@
       "title": "Porter Woods",
       "description": "\"Here are the woods behind porter. If you think I'm crazy, you should see my uncle that lives out here.\"",
       "image": "./Scenes/Porter/img/woods.jpg",
-      "audio": "audio/porter.mp3",
+      "audio": "",
       "options": [
         {
           "text": "Go to Caves",
@@ -824,7 +824,7 @@
       "title": "Porter Caves",
       "description": "\"This is Porter Caves. It's where you go to explore the devils butt crack. It is a deep underground, cave system but unfortunately the school/city closed it down years ago:(\"",
       "image": "./Scenes/Porter/img/caves.jpg",
-      "audio": "audio/porter.mp3",
+      "audio": "",
       "options": [
         {
           "text": "Go back to Porter",
@@ -837,7 +837,7 @@
       "title": "Rachel Carson",
       "description": "what the squirrel says about Rachel Carson",
       "image": "./Scenes/RachelCarson/img/carson.jpg",
-      "audio": "audio/carson.mp3",
+      "audio": "",
       "options": [
         {
           "text": "Go to Porter",
@@ -867,7 +867,7 @@
       "description": "\"what the squirrel says about family student housing\"",
       "style": "./Scenes/FamilyHousing/css/familyHousing.css",
       "image": "./Scenes/FamilyHousing/img/familyhousing.jpg",
-      "audio": "audio/oakes.mp3",
+      "audio": "",
       "options": [
         {
           "text": "Go to Porter",
@@ -892,7 +892,7 @@
       "title": "Oakes",
       "description": "what the squirrel says about Oakes",
       "image": "./Scenes/Oakes/img/oakes.jpg",
-      "audio": "audio/oakes.mp3",
+      "audio": "",
       "options": [
         {
           "text": "Go to Family Student Housing",
