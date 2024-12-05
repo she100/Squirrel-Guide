@@ -6,6 +6,11 @@
     <title>Squirrel Guide</title>
     <link rel="stylesheet" href="css/site.css" />
     <link id="theme-style" rel="stylesheet" href="" />
+
+    <!-- Library to type out the text in real time -->
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
+    <!-- Jquery and backend -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./js/site.js" defer></script>
 
@@ -29,6 +34,11 @@
         <div class="play-container animated" id="play">
           <button id="play-button"><i class="fas fa-play"></i></button>
         </div>
+        <div class="play-container" id="back">
+          <button id="previous-scene-button">
+            <i class="fas fa-arrow-left"></i>
+          </button>
+        </div>
         <div class="play-container" id="home">
           <a id="home-button" href="./index.html"
             ><i class="fas fa-home"></i
@@ -49,9 +59,9 @@
           />
         </div>
       </div>
-      <div id="footer">
-        <!-- <button id="restart-button">Restart</button> -->
-      </div>
+      <!-- <div id="footer"> -->
+      <!-- <button id="restart-button">Restart</button> -->
+      <!-- </div> -->
     </div>
   </body>
 </html>
