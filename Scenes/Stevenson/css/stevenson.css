@@ -3,7 +3,7 @@
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
 
 #scene-title {
-  font-family: "Neucha", sans-serif;
+  font-family: "Bokor",system-ui;
   font-size: 108px;
   font-weight: 500;
   margin: 0;
