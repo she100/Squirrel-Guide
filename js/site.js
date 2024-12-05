@@ -26,7 +26,12 @@ function loadScene(sceneId) {
   if (!scene) return; // Exit if the scene is not found
 
   // Update the scene title
-  $("#scene-title").text(scene.title);
+  if (scene.title === "" || scene.title === " ") {
+    $("#scene-title").css("display", "none");
+  }else{
+    $("#scene-title").text(scene.title);
+    $("#scene-title").show();
+  }
 
   // Reset the description index
   currentDescriptionIndex = 0;
@@ -113,8 +118,8 @@ function resetScene() {
   $("#thought,#tail-box").css("opacity", "0");
   // Restart animation
   $("#play").attr("class", "play-container animated");
-
-  $(".lasers").hide(); // make sure lasers are hidden
+  // make sure lasers are hidden
+  $(".lasers").hide(); 
 }
 
 // Load the JSON data and initialize the first scene
@@ -136,8 +141,10 @@ $("#previous-scene-button").on("click", function() {
 
 // Event listener to play the audio and show the thought bubble
 $("#play-button").on("click", function() {
-  //play the audio for that scene
-  $("#scene-audio").trigger("play");
+  //play the audio for that scene only if there is audio
+  if ($("#scene-audio").attr("src") !== ""){
+    $("#scene-audio").trigger("play");
+  }
   //change opacity to 1 to show thought bubble
   $("#thought,#tail-box").css("opacity", "1");
   //stop play button animation
