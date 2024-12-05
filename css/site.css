@@ -15,7 +15,7 @@ body {
 #main-container {
   height: 100%;
   display: grid;
-  grid-template-rows: 150px 1fr 100px; /* Header, content area, and footer */
+  grid-template-rows: 150px 1fr; /* Header, content area, and footer */
   grid-template-columns: 100px 1fr; /* Controls and content */
   /* border: solid 4px blue; */
 }
@@ -59,11 +59,11 @@ body {
   /* border: solid 4px red; */
 }
 
-#footer {
+/* #footer {
   grid-row: 3;
   grid-column: 1 / 3;
-  /* border: solid 4px purple; */
-}
+  border: solid 4px purple;
+} */
 
 #scene-title {
   font-family: "Neucha", sans-serif;
@@ -232,6 +232,6 @@ audio {
   display: none;
 }
 
-.options button{
+.options button {
   max-width: 50px;
 }
