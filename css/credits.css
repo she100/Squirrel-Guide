@@ -1,20 +1,38 @@
 /* This is the CSS page for credits page only. */
 
+
+.content{
+    text-align: center;
+}
+
 .credit-photo {
     position: absolute;
     /* Puts image behind text */
     z-index: -1;
-    max-width: 1500px;
+    max-width: 1550px;
   }
 
 p{
     color: rgb(255, 255, 255);
+    text-align: center;
 }
 
-h3{
+h3,h4{
     color: rgb(255, 255, 255);
+    text-align: center;
 }
 
 h1{
     color: antiquewhite;
+    text-align: center;
+}
+
+/* Can't change the size of home button */
+.play-container{
+    width: 60px;
+
+}
+
+a{
+    color: aliceblue;
 }
