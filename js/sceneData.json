@@ -187,7 +187,7 @@
     {
       "id": "!",
       "title": " ",
-      "description": "\"hey hey don't freak out just yet, I got a cure back at my place but if I'm gonna bring you there you might as well go on my tour first well we get there.\"",
+      "description": "\"hey hey don't freak out just yet, I got a cure back at my place but if I'm gonna bring you there you might as well go on my tour first.\"",
       "image": "./Scenes/Welcome/img/Welcome.jpg",
       "audio": "",
       "options": [
@@ -205,7 +205,7 @@
       "audio": "",
       "options": [
         {
-          "text": "What! That's the discounted price",
+          "text": "What! That's the discounted price?",
           "nextScene": "Discounted Price"
         },
         {
@@ -248,7 +248,7 @@
       "id": "Super Rabies",
       "title": " ",
       "description": [
-        "\"Look when I bit you I might passed something or another on, I don't know if you know this but squirrels don't normally talk. I'm a bit of a mutation cooked up here by one of UCSC finest alumni, Dr. Pete Guafani, I'm sure you'll learn about him if you choose to attend this lovely school.\"",
+        "\"Look when I bit you I might have passed something or another on, I don't know if you know this but squirrels don't normally talk. I'm a bit of a mutation cooked up here by one of UCSC finest alumni, Dr. Pete Guafani, I'm sure you'll learn about him if you choose to attend this lovely school.\"",
         "\"But in so creating me he didn't just give me the ability to speak, what I'm trying to say here is that I don't just have your run of the mill rabies that your run of the mill hospital can take care of. I got this cure back at my place that'll fix you right up and I'll give you a tour of the campus on the way, how's that sound?\""
       ],
       "image": "./Scenes/Welcome/img/Welcome.jpg",

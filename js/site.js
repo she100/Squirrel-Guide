@@ -4,7 +4,7 @@
 
 
 let tourData = {};
-let currentSceneId = "Welcome"; //first scene
+let currentSceneId = "Rave"; //first scene
 let currentDescriptionIndex = 0;
 let sceneHistory = []; // Array to keep track of visited scenes
 
@@ -45,8 +45,15 @@ function loadScene(sceneId) {
     }
   }
   
-  //load the CSS for this specific scene
-  $("#theme-style").attr("href", `${scene.style}`);
+  //load the CSS for this specific scene only if there is a specific style (this stops the browser from throwing an error if the link is empty)
+  if (scene.style && scene.style !== "") {
+    if ($("#theme-style").length === 0) {
+      $("head").append('<link id="theme-style" rel="stylesheet" href="">');
+    }
+    $("#theme-style").attr("href", `${scene.style}`);
+  } else {
+    $("#theme-style").remove(); // Remove the link element if no specific style is provided
+  }
 
   // Set the background image
   $("body").css("background-image", `url(${scene.image})`);
@@ -60,7 +67,16 @@ function loadScene(sceneId) {
   // Update the description
   updateDescription();
 
-  //show the options
+  // Show the options if the scene has been visited before
+  if (sceneHistory.includes(sceneId)){
+    showOptions(scene);
+  }
+  
+  // Update the current scene ID
+  currentSceneId = sceneId;
+}
+
+function showOptions(scene){
   scene.options.forEach(option => {
     const button = $("<button></button>").text(option.text);
     button.on("click", function() {
@@ -68,9 +84,8 @@ function loadScene(sceneId) {
       loadScene(option.nextScene); // Load the next scene on click
     });
     $("#options-container").append(button);
+    button.show();
   });
-  // Update the current scene ID
-  currentSceneId = sceneId;
 }
 
 // Uses the TypewriterJS library to type out the description
@@ -105,6 +120,11 @@ function typeDescription() {
       // Single description
       typewriter.typeString(scene.description).start();
     }
+    if(!sceneHistory.includes(currentSceneId)) { // If the scene has not been visited before (the options are already shown if the scene has been visited before)
+      typewriter.callFunction(() => { 
+        showOptions(scene); // Show the options after typing the description
+      }).start();
+    }
   }}
 
 // add lasers
@@ -118,8 +138,12 @@ function resetScene() {
   $("#thought,#tail-box").css("opacity", "0");
   // Restart animation
   $("#play").attr("class", "play-container animated");
+  //hide the options
+  $("#options-container button").hide();
   // make sure lasers are hidden
-  $(".lasers").hide(); 
+  $(".lasers").hide();
+  // remove the rave elements if they exist
+  $(".lasers").remove();
 }
 
 // Load the JSON data and initialize the first scene
@@ -136,6 +160,7 @@ $("#previous-scene-button").on("click", function() {
   if (sceneHistory.length > 0) {
     const previousSceneId = sceneHistory.pop();
     loadScene(previousSceneId);
+    show
   }
 });
 
