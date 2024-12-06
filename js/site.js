@@ -179,6 +179,7 @@ $("#previous-scene-button").on("click", function () {
 $("#fast-forward-button").on("click", function () {
   // show the options
   showOptions(tourData.scenes.find((s) => s.id === currentSceneId));
+  $("#forward").attr("class", "play-container");
 });
 
 // Event listener to play the audio and show the thought bubble
