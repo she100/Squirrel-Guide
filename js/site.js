@@ -124,16 +124,12 @@ function typeDescription() {
       // Single description
       typewriter.typeString(scene.description).start();
     }
-    if (!sceneHistory.includes(currentSceneId)) {
-      // If the scene has not been visited before (the options are already shown if the scene has been visited before)
-      typewriter
-        .callFunction(() => {
-          if (sceneHistory.includes(currentSceneId)) return; // Exit if the scene has been visited before
-          if (scene !== currentSceneId) return; // Exit if the scene has changed
-          showOptions(scene); // Show the options after typing the description
-        })
-        .start();
-    }
+    // If the scene has not been visited before (the options are already shown if the scene has been visited before)
+    typewriter
+      .callFunction(() => {
+        $("#forward").attr("class", "play-container animated");
+      })
+      .start();
   }
 }
 
@@ -148,6 +144,7 @@ function resetScene() {
   $("#thought,#tail-box").css("opacity", "0");
   // Restart animation
   $("#play").attr("class", "play-container animated");
+  $("#forward").attr("class", "play-container");
   //hide the options
   $("#options-container button").hide();
   // make sure lasers are hidden
