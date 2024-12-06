@@ -9,7 +9,7 @@
     position: absolute;
     /* Puts image behind text */
     z-index: -1;
-    max-width: 1500px;
+    max-width: 1550px;
   }
 
 p{
