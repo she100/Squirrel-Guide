@@ -1,3 +1,20 @@
 /* This is the CSS page for credits page only. */
 
+.credit-photo {
+    position: absolute;
+    /* Puts image behind text */
+    z-index: -1;
+    max-width: 1500px;
+  }
 
+p{
+    color: rgb(255, 255, 255);
+}
+
+h3{
+    color: rgb(255, 255, 255);
+}
+
+h1{
+    color: antiquewhite;
+}
