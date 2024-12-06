@@ -407,7 +407,7 @@
     {
       "id": "Art Department",
       "title": "Art Department",
-      "description": "\"Art Department Info\"",
+      "description": "\"The Art Department here has plenty of student-run galleries. The department is a great program that combines art and technology. They have  plenty of student run galleries that allow students to showcase their creativity. I highly recommend you stop  by if you have time in between classes to check it out as you're always in for a treat and free art!\"",
       "image": "./Scenes/ArtDept/img/ArtDepartment.jpg",
       "audio": "",
       "options": [
@@ -458,7 +458,7 @@
     {
       "id": "The Village",
       "title": "The Village",
-      "description": "\"The Village Info\"",
+      "description": "\"Did you know that the Village was designed with sustainability in mind?  Its housing buildings are equipped with energy-efficient features, offering apartment-style housing. It houses upper-division students, graduate students, and families. Not to mention it's nestled within the vast and beautiful redwood forest that Santa Cruz Mountain has to offer. It is not a part of the traditional college system, it’s located on the northern side of the UCSC campus.\"",
       "image": "./Scenes/Village/img/TheVillage.jpg",
       "audio": "",
       "options": [
@@ -614,7 +614,7 @@
     {
       "id": "Merrill",
       "title": "Merrill",
-      "description": "Merrill College focuses on Cultural Identities and Global Consciousness, emphasizing the study of cultural diversity, social change, and global issues. The college is home to various academic and cultural resources, including the Politics, Legal Studies, and Latin American & Latino Studies departments. It also hosts KZSC, the campus radio station, and the Lionel Cantú Queer Center. Merrill's residential facilities are located near redwood forests and Pogonip parkland, featuring residence halls, apartments, and shared community spaces.",
+      "description": "\"Merrill College focuses on Cultural Identities and Global Consciousness, emphasizing the study of cultural diversity, social change, and global issues. The college is home to various academic and cultural resources, including the Politics, Legal Studies, and Latin American & Latino Studies departments. It also hosts KZSC, the campus radio station, and the Lionel Cantú Queer Center. Merrill's residential facilities are located near redwood forests and Pogonip parkland, featuring residence halls, apartments, and shared community spaces.\"",
       "image": "./Scenes/Merrill/img/Merrill.jpg",
       "audio": "",
       "options": [
@@ -631,7 +631,7 @@
     {
       "id": "Crown",
       "title": "Crown",
-      "description": "what the squirrel says about Crown",
+      "description": "\"Crown college offers a community centered academic experience that offers a variety of living arrangements. .First year programs include courses such as social sciences and humanities. The college holds various cultural and social activities that offer students opportunities to meet new people.\"",
       "image": "./Scenes/Crown/img/crown.webp",
       "audio": "",
       "options": [
@@ -656,7 +656,7 @@
     {
       "id": "9/10",
       "title": "College 9 and John R. Lewis",
-      "description": "\"what the squirrel says about College 9 and John R. Lewis\"",
+      "description": "\"College 9 opened in 2000 and its theme is international and global perspectives. The motto they have is “Global citizenship” which  is meant to prepare students to be responsible global citizens and stay engaged. Its community has a strong emphasis on community service and social justice. College 10, recently renamed to John R. Lewis, was founded in 2009 and is the tenth residential college at UCSC. Their motto is “Educating for a just Society”. They are known for being passionate about social justice, environmental issues and activism.\"",
       "style": "./Scenes/9-10/css/9-10.css",
       "image": "./Scenes/9-10/img/9-10.webp",
       "audio": "",
@@ -718,7 +718,7 @@
     {
       "id": "Baskin",
       "title": "Baskin Engineering",
-      "description": "what the squirrel says about Baskin Engineering",
+      "description": "\"The Baskin School of Engineering (Baskin Engineering) at the university is meant to encourage and focus students on engineering,  computer science education and research. Established in 1997, it is a place that provides a learning and collaborative environment. The department is divided into several departments to offer programs to both undergraduate and graduate programs.\"",
       "image": "./Scenes/Baskin/img/baskin.png",
       "audio": "",
       "options": [
