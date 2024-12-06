@@ -614,7 +614,7 @@
     {
       "id": "Merrill",
       "title": "Merrill",
-      "description": "what the squirrel says about Merrill",
+      "description": "Merrill College focuses on Cultural Identities and Global Consciousness, emphasizing the study of cultural diversity, social change, and global issues. The college is home to various academic and cultural resources, including the Politics, Legal Studies, and Latin American & Latino Studies departments. It also hosts KZSC, the campus radio station, and the Lionel Cantú Queer Center. Merrill's residential facilities are located near redwood forests and Pogonip parkland, featuring residence halls, apartments, and shared community spaces.",
       "image": "./Scenes/Merrill/img/Merrill.jpg",
       "audio": "",
       "options": [
@@ -771,7 +771,7 @@
     {
       "id": "Kresge",
       "title": "Kresge",
-      "description": "what the squirrel says about Kresge",
+      "description": "Kresge is known for it strong emphasis on interdisciplinary and experimental education, blending traditional liberal arts approaches with innovative learning. It recently underwent a gentrification project resulting in some new housing and some swanky new lecture halls.",
       "image": "./Scenes/Kresge/img/kresge.jpg",
       "audio": "",
       "options": [
@@ -792,7 +792,7 @@
     {
       "id": "Porter",
       "title": "Porter",
-      "description": "what the squirrel says about Porter",
+      "description": "You smell that? Welcome to Porter College. Porter was founded with an emphasizes on creativity and original thought, with a strong focus on the arts and fostering an inclusive community. ",
       "image": "./Scenes/Porter/img/porter.jpg",
       "audio": "",
       "options": [
@@ -835,7 +835,7 @@
     {
       "id": "Rachel Carson",
       "title": "Rachel Carson",
-      "description": "what the squirrel says about Rachel Carson",
+      "description": "Rachel Carson is known for its focus on the enviornment and society, exploring the relationships between human systems and enviornmental change.",
       "image": "./Scenes/RachelCarson/img/carson.jpg",
       "audio": "",
       "options": [
@@ -864,7 +864,7 @@
     {
       "id": "Family Student Housing",
       "title": "Family Student Housing",
-      "description": "\"what the squirrel says about family student housing\"",
+      "description": "\"This housing option is special because its only for students that got a family. \"",
       "style": "./Scenes/FamilyHousing/css/familyHousing.css",
       "image": "./Scenes/FamilyHousing/img/familyhousing.jpg",
       "audio": "",
@@ -890,7 +890,7 @@
     {
       "id": "Oakes",
       "title": "Oakes",
-      "description": "what the squirrel says about Oakes",
+      "description": "Oakes is known for its focus on diversity, socal justice, and community building. Its mission is to celebrate human differences and encourage dialogue across those differences.",
       "image": "./Scenes/Oakes/img/oakes.jpg",
       "audio": "",
       "options": [
