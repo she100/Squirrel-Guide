@@ -29,6 +29,10 @@ h1{
 
 /* Can't change the size of home button */
 .play-container{
-    size: 500px
+    width: 60px;
 
+}
+
+a{
+    color: aliceblue;
 }
