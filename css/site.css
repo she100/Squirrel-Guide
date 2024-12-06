@@ -9,7 +9,7 @@ body {
   background-size: cover; /* Ensure the entire image is visible */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
-  background-color: blue;
+  /* background-color: blue; */
 }
 
 #main-container {
@@ -153,7 +153,21 @@ body {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  animation: shootInFromLeft 0.5s ease-out forwards; /* Apply the animation */
+  display: none;
 }
+
+@keyframes shootInFromLeft {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 #options-container button:hover {
   box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px -5px;
   transform: translate3d(0, 2px, 0);
