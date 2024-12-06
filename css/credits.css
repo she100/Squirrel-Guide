@@ -1,5 +1,10 @@
 /* This is the CSS page for credits page only. */
 
+
+.content{
+    align-items: center;
+}
+
 .credit-photo {
     position: absolute;
     /* Puts image behind text */
