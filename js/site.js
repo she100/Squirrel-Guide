@@ -4,7 +4,7 @@
 
 
 let tourData = {};
-let currentSceneId = "Rave"; //first scene
+let currentSceneId = "Welcome"; //first scene
 let currentDescriptionIndex = 0;
 let sceneHistory = []; // Array to keep track of visited scenes
 
