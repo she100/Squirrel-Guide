@@ -2,7 +2,7 @@
 
 
 .content{
-    align-items: center;
+    text-align: center;
 }
 
 .credit-photo {
@@ -14,12 +14,21 @@
 
 p{
     color: rgb(255, 255, 255);
+    text-align: center;
 }
 
-h3{
+h3,h4{
     color: rgb(255, 255, 255);
+    text-align: center;
 }
 
 h1{
     color: antiquewhite;
+    text-align: center;
+}
+
+/* Can't change the size of home button */
+.play-container{
+    size: 500px
+
 }
