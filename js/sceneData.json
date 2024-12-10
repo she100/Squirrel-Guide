@@ -407,7 +407,7 @@
     {
       "id": "Art Department",
       "title": "Art Department",
-      "description": "\"Art Department Info\"",
+      "description": "\"The Art Department here has plenty of student-run galleries. The department is a great program that combines art and technology. They have  plenty of student run galleries that allow students to showcase their creativity. I highly recommend you stop  by if you have time in between classes to check it out as you're always in for a treat and free art!\"",
       "image": "./Scenes/ArtDept/img/ArtDepartment.jpg",
       "audio": "",
       "options": [
@@ -432,7 +432,7 @@
     {
       "id": "Bike Path",
       "title": "Bike Path",
-      "description": "\"Bike path Info\"",
+      "description": "\"All over the campus you can find trails to hike or bike on. They are perfect for chumps without a car.\"",
       "image": "./Scenes/BikePath/img/bikepath.jpg",
       "audio": "",
       "options": [
@@ -458,7 +458,7 @@
     {
       "id": "The Village",
       "title": "The Village",
-      "description": "\"The Village Info\"",
+      "description": "\"Did you know that the Village was designed with sustainability in mind?  Its housing buildings are equipped with energy-efficient features, offering apartment-style housing. It houses upper-division students, graduate students, and families. Not to mention it's nestled within the vast and beautiful redwood forest that Santa Cruz Mountain has to offer. It is not a part of the traditional college system, it’s located on the northern side of the UCSC campus.\"",
       "image": "./Scenes/Village/img/TheVillage.jpg",
       "audio": "",
       "options": [
@@ -614,7 +614,7 @@
     {
       "id": "Merrill",
       "title": "Merrill",
-      "description": "what the squirrel says about Merrill",
+      "description": "\"Merrill College focuses on Cultural Identities and Global Consciousness, emphasizing the study of cultural diversity, social change, and global issues. The college is home to various academic and cultural resources, including the Politics, Legal Studies, and Latin American & Latino Studies departments. It also hosts KZSC, the campus radio station, and the Lionel Cantú Queer Center. Merrill's residential facilities are located near redwood forests and Pogonip parkland, featuring residence halls, apartments, and shared community spaces.\"",
       "image": "./Scenes/Merrill/img/Merrill.jpg",
       "audio": "",
       "options": [
@@ -631,7 +631,7 @@
     {
       "id": "Crown",
       "title": "Crown",
-      "description": "what the squirrel says about Crown",
+      "description": "\"Crown college offers a community centered academic experience that offers a variety of living arrangements. .First year programs include courses such as social sciences and humanities. The college holds various cultural and social activities that offer students opportunities to meet new people.\"",
       "image": "./Scenes/Crown/img/crown.webp",
       "audio": "",
       "options": [
@@ -656,7 +656,7 @@
     {
       "id": "9/10",
       "title": "College 9 and John R. Lewis",
-      "description": "\"what the squirrel says about College 9 and John R. Lewis\"",
+      "description": "\"College 9 opened in 2000 and its theme is international and global perspectives. The motto they have is “Global citizenship” which  is meant to prepare students to be responsible global citizens and stay engaged. Its community has a strong emphasis on community service and social justice. College 10, recently renamed to John R. Lewis, was founded in 2009 and is the tenth residential college at UCSC. Their motto is “Educating for a just Society”. They are known for being passionate about social justice, environmental issues and activism.\"",
       "style": "./Scenes/9-10/css/9-10.css",
       "image": "./Scenes/9-10/img/9-10.webp",
       "audio": "",
@@ -718,7 +718,7 @@
     {
       "id": "Baskin",
       "title": "Baskin Engineering",
-      "description": "what the squirrel says about Baskin Engineering",
+      "description": "\"The Baskin School of Engineering (Baskin Engineering) at the university is meant to encourage and focus students on engineering,  computer science education and research. Established in 1997, it is a place that provides a learning and collaborative environment. The department is divided into several departments to offer programs to both undergraduate and graduate programs.\"",
       "image": "./Scenes/Baskin/img/baskin.png",
       "audio": "",
       "options": [
@@ -771,7 +771,7 @@
     {
       "id": "Kresge",
       "title": "Kresge",
-      "description": "what the squirrel says about Kresge",
+      "description": "Kresge is known for it strong emphasis on interdisciplinary and experimental education, blending traditional liberal arts approaches with innovative learning. It recently underwent a gentrification project resulting in some new housing and some swanky new lecture halls.",
       "image": "./Scenes/Kresge/img/kresge.jpg",
       "audio": "",
       "options": [
@@ -792,7 +792,7 @@
     {
       "id": "Porter",
       "title": "Porter",
-      "description": "what the squirrel says about Porter",
+      "description": "You smell that? Welcome to Porter College. Porter was founded with an emphasizes on creativity and original thought, with a strong focus on the arts and fostering an inclusive community. ",
       "image": "./Scenes/Porter/img/porter.jpg",
       "audio": "",
       "options": [
@@ -835,7 +835,7 @@
     {
       "id": "Rachel Carson",
       "title": "Rachel Carson",
-      "description": "what the squirrel says about Rachel Carson",
+      "description": "Rachel Carson is known for its focus on the enviornment and society, exploring the relationships between human systems and enviornmental change.",
       "image": "./Scenes/RachelCarson/img/carson.jpg",
       "audio": "",
       "options": [
@@ -864,7 +864,7 @@
     {
       "id": "Family Student Housing",
       "title": "Family Student Housing",
-      "description": "\"what the squirrel says about family student housing\"",
+      "description": "\"This housing option is special because its only for students that got a family. \"",
       "style": "./Scenes/FamilyHousing/css/familyHousing.css",
       "image": "./Scenes/FamilyHousing/img/familyhousing.jpg",
       "audio": "",
@@ -890,7 +890,7 @@
     {
       "id": "Oakes",
       "title": "Oakes",
-      "description": "what the squirrel says about Oakes",
+      "description": "Oakes is known for its focus on diversity, socal justice, and community building. Its mission is to celebrate human differences and encourage dialogue across those differences.",
       "image": "./Scenes/Oakes/img/oakes.jpg",
       "audio": "",
       "options": [
@@ -915,7 +915,7 @@
     {
       "id": "Rave",
       "title": "Forest Rave!!",
-      "description": "boots and cats",
+      "description": "You made it kid, the pinnacle of the UCSC experience. The Forest rave. The clandestine getherings of the student body, its a place to socialize and dance to EDM. Best to BYOB.",
       "style": "./Scenes/Rave/css/rave.css",
       "image": "./Scenes/Rave/img/rave.jpg",
       "audio": "./Scenes/Rave/audio/Bass So Loud final1.mp3",

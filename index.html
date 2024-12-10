@@ -18,37 +18,47 @@
     <!-- <script type="text/javascript" src="./js/lab.js" DEFER></script> -->
   </head>
   <body>
-    <img id="clouds1"  src="./img/cloud.png" />
-    <img id="clouds2"  src="./img/cloud.png" />
-    <img id="leaves" class="left-side"src="./img/leaves.png" />
-    <img id="leaves" class="right-side" src="./img/leaves.png" />
-    <img id="tree" src="./img/tree.png" />
-    <img id="squirrel" src="./img/TempSquirrel.png" />
+    <img id="of"  src="./img/of.png" />
+    <img id="squirrel"  src="./img/squirreltext.png" />
+    <svg width="100%" height="100%" id="oval">
+      <ellipse cx="75%" cy="40%" rx="55%" ry="80%" fill="rgb(240,244,234)" opacity = "0.5" id="ellipse"/>
+      <defs>
+        <clipPath id="ellipse-clip">
+          <ellipse cx="75%" cy="40%" rx="55%" ry="80%" />
+        </clipPath>
+      </defs>
+      <image x="3%" y="0" width="110%" height="110%" href="./img/bridge.png" clip-path="url(#ellipse-clip)"  opacity = ".5"/>
+      <rect width="100%" height="9%" x="0" y="65%" fill="rgb(220,170,0)"  />
+    </svg>
     
-    
-    <!-- Style this page by changing the CSS in ../css/site.css or css/lab.css -->
     <main id="content">
-      <section>
-        <div id="title-card">
-          <h1>SQUIRREL GUIDE</h1>
-        </div>
-        <!--Removed div id "credits" and <p>Credits</p> to remove extra stuff-->
-        <!-- <div id="credits"> -->
-          <!-- <p>Credits</p> -->
-      <a id="credits button" href="./creditspage.html">
-        <button id="credits"onclick="location.href"='./creditspage.html">Credits</button>
-      </a>
+      <div id = "title">
+        <h1>TOUR</h1>
+        <h2>UNIVERSITY OF CALIFORNIA SANTA CRUZ</h2>
+        <p>ESCORTED BY <s>STUDENT SERVICES</s></p>
 
+      </div>
+      <div id = "begin">
+        <h1>SQUIRREL EXPRESS SERVICES</h1>
+        <h3 onclick="goCredits()">CREDITS</h3>
+        <script>
+          function goCredits() {
+            // Redirect to another page
+            window.location.href = "creditspage.html";
+          }
+          </script>
 
-        </div>
-        <div id="shtuff">
-          <p>More credits if we need the space or other info</p>
-        </div>
-      </section>
-      <nav id="links">
-        <!-- Put links to labs here. -->
-        <button id="begin"onclick="location.href='basePage.html'">Begin!</button>
-      </nav>
+      </div>
+
+      <div id="start" onclick="goStart()"> <h3>START</h3></div>
+
+      <script>
+        function goStart() {
+          // Redirect to another page
+          window.location.href = "basePage.html";
+        }
+        </script>
+    
     </main>
   </body>
 </html>

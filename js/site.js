@@ -2,7 +2,6 @@
 // Author: Your Name
 // Date:
 
-
 let tourData = {};
 let currentSceneId = "Welcome"; //first scene
 let currentDescriptionIndex = 0;
@@ -22,13 +21,13 @@ function loadScene(sceneId) {
   }
 
   // Find the scene by ID
-  const scene = tourData.scenes.find(s => s.id === sceneId);
+  const scene = tourData.scenes.find((s) => s.id === sceneId);
   if (!scene) return; // Exit if the scene is not found
 
   // Update the scene title
   if (scene.title === "" || scene.title === " ") {
     $("#scene-title").css("display", "none");
-  }else{
+  } else {
     $("#scene-title").text(scene.title);
     $("#scene-title").show();
   }
@@ -44,7 +43,7 @@ function loadScene(sceneId) {
       $("#scene-description").text(scene.description);
     }
   }
-  
+
   //load the CSS for this specific scene only if there is a specific style (this stops the browser from throwing an error if the link is empty)
   if (scene.style && scene.style !== "") {
     if ($("#theme-style").length === 0) {
@@ -68,18 +67,19 @@ function loadScene(sceneId) {
   updateDescription();
 
   // Show the options if the scene has been visited before
-  if (sceneHistory.includes(sceneId)){
+  if (sceneHistory.includes(sceneId)) {
     showOptions(scene);
   }
-  
+
   // Update the current scene ID
   currentSceneId = sceneId;
 }
 
-function showOptions(scene){
-  scene.options.forEach(option => {
+function showOptions(scene) {
+  $("#options-container").empty(); // Clear the options
+  scene.options.forEach((option) => {
     const button = $("<button></button>").text(option.text);
-    button.on("click", function() {
+    button.on("click", function () {
       resetScene(); // Reset the scene
       loadScene(option.nextScene); // Load the next scene on click
     });
@@ -89,29 +89,33 @@ function showOptions(scene){
 }
 
 // Uses the TypewriterJS library to type out the description
-function typeDescription() { 
+function typeDescription() {
   const descriptionContainer = document.getElementById("scene-description");
-  const scene = tourData.scenes.find(s => s.id === currentSceneId); // Find the current scene
+  const scene = tourData.scenes.find((s) => s.id === currentSceneId); // Find the current scene
 
-  if (scene && scene.description) { // If the scene has a description
+  if (scene && scene.description) {
+    // If the scene has a description
     // Clear previous content
     descriptionContainer.innerHTML = "";
 
     // Initialize TypewriterJS
     const typewriter = new Typewriter(descriptionContainer, {
       loop: false, // No looping
-      delay: 20,   // Typing speed
+      delay: 20, // Typing speed
       cursor: "", // Cursor appearance
       // deleteSpeed: 10 // Delete speed
     });
 
-    if (Array.isArray(scene.description)) { // If there are multiple descriptions
-      scene.description.forEach((description, index) => { // Loop through each description
+    if (Array.isArray(scene.description)) {
+      // If there are multiple descriptions
+      scene.description.forEach((description, index) => {
+        // Loop through each description
         typewriter // Type the description
           .typeString(description)
           .pauseFor(1000)
-          .start()
-        if(index < scene.description.length - 1) { // only delete if there are more descriptions
+          .start();
+        if (index < scene.description.length - 1) {
+          // only delete if there are more descriptions
           typewriter.deleteAll(1).start(); // Delete the description
           typewriter.pauseFor(500); // Pause before typing the next description
         }
@@ -120,12 +124,14 @@ function typeDescription() {
       // Single description
       typewriter.typeString(scene.description).start();
     }
-    if(!sceneHistory.includes(currentSceneId)) { // If the scene has not been visited before (the options are already shown if the scene has been visited before)
-      typewriter.callFunction(() => { 
-        showOptions(scene); // Show the options after typing the description
-      }).start();
-    }
-  }}
+    // If the scene has not been visited before (the options are already shown if the scene has been visited before)
+    typewriter
+      .callFunction(() => {
+        $("#forward").attr("class", "play-container animated");
+      })
+      .start();
+  }
+}
 
 // add lasers
 function addRaveElements() {
@@ -138,6 +144,7 @@ function resetScene() {
   $("#thought,#tail-box").css("opacity", "0");
   // Restart animation
   $("#play").attr("class", "play-container animated");
+  $("#forward").attr("class", "play-container");
   //hide the options
   $("#options-container button").hide();
   // make sure lasers are hidden
@@ -147,27 +154,38 @@ function resetScene() {
 }
 
 // Load the JSON data and initialize the first scene
-$(document).ready(function() {
-  $.getJSON('./js/sceneData.json', function(data) {
+$(document).ready(function () {
+  $.getJSON("./js/sceneData.json", function (data) {
     tourData = data;
     loadScene(currentSceneId); // Load the initial scene
   });
 });
 
 // Event listener for the "Go to Previous Scene" button
-$("#previous-scene-button").on("click", function() {
-  console.log(`Going back to the previous scene from: ${currentSceneId} to ${sceneHistory[sceneHistory.length - 1]}`);
+$("#previous-scene-button").on("click", function () {
+  console.log(
+    `Going back to the previous scene from: ${currentSceneId} to ${
+      sceneHistory[sceneHistory.length - 1]
+    }`
+  );
   if (sceneHistory.length > 0) {
     const previousSceneId = sceneHistory.pop();
     loadScene(previousSceneId);
-    show
+    show;
   }
 });
 
+// Event listener for the "Go to Previous Scene" button
+$("#fast-forward-button").on("click", function () {
+  // show the options
+  showOptions(tourData.scenes.find((s) => s.id === currentSceneId));
+  $("#forward").attr("class", "play-container");
+});
+
 // Event listener to play the audio and show the thought bubble
-$("#play-button").on("click", function() {
+$("#play-button").on("click", function () {
   //play the audio for that scene only if there is audio
-  if ($("#scene-audio").attr("src") !== ""){
+  if ($("#scene-audio").attr("src") !== "") {
     $("#scene-audio").trigger("play");
   }
   //change opacity to 1 to show thought bubble
@@ -176,7 +194,7 @@ $("#play-button").on("click", function() {
   $("#play").attr("class", "play-container");
   // Type the description
   typeDescription();
-  
+
   if (currentSceneId === "Rave") {
     $(".lasers").show();
   }
